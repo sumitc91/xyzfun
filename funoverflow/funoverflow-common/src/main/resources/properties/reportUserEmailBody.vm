@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+</HEAD>
+<BODY style="background:#E8EDE5;color: #4F4F4F;font: 75% "Helvetica Neue",Helvetica,Arial,san-serif;margin:0px;padding:0px;">
+<table width="600" height="480" border="0" cellspacing="0" cellpadding="0" bgcolor="#F3F3F3">
+  <tr>
+        <td width="15">&nbsp;</td>
+              <td valign="top" >
+             
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+                    <tr>
+                           <td height="15"  bgcolor="#F3F3F3">&nbsp;</td>
+                       </tr>
+                       <tr>
+                           <td height="350" valign="top" style="border:1px solid #cccccc;">
+                              <table>
+                              <tr>
+                              <td width="15">&nbsp;</td>
+                              <td>
+                              <table width="100%" cellspacing="0" cellpadding="0" style=" padding:10px 0px; ">
+                                    
+                                           <tr>
+                     <td colspan="2" style="height:25px; padding-bottom:10px;"><h2 style="color:#41AE4A; margin:0px; padding:0px; font-size:21px; ">Account Verification</h2></td>                                             
+                                           </tr>                                          
+                                           <tr>
+                                                <td colspan="3" style="padding:10px 0px 10px 0px; color:#4f4f4f; font-size:13px; ">
+                                               
+                                         Dear $Customer_Name,<br /><br />
+You're one step away from becoming a BuddyMe Member.<br /><br />
+ 
+ <b>Please Click Below To Activate Your Account:</b><br/><br/>
+<a href="$Verification_Url">$Verification_Url</a><br/><br/>
+(Please copy and paste the above URL to your browser if the link doesn't work.) <br/><br/>
+
+
+If you have questions or concerns, please contact us at <a style="color:#5893d4; text-decoration:none " href="mailto:contactus@buddyme.com">contactus@buddyme.com</a> or call
+999.999.9999.<br />                                    </td>
+                                           </tr>
+                                             <p style="margin:0px; padding:0px; height:10px" ></p>
+                                           
+                                             <p style="margin:0px; padding:0px; height:10px" ></p>
+                                           <tr>
+                                                <td width="106" style="color:#4f4f4f; font-size:13px;">Thanks for using BuddyMe!</td>
+                                             <td width="217">&nbsp;</td>
+                                             <td>&nbsp;</td>
+                                           </tr>
+                                           <p style="margin:0px; padding:0px; height:10px" ></p>
+                                           
+                              </table>
+                              </td>
+                              <td width="15">&nbsp;</td>
+                              </tr>
+                              </table>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td height="115"  bgcolor="#F3F3F3" valign="top">
+                                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  
+                                  </table>
+ 
+                           </td>
+                       </tr>
+                </table>  
+              </td>
+              <td width="15">&nbsp;</td>
+  </tr>
+</table>
+ 
+</body>
+</HTML>
