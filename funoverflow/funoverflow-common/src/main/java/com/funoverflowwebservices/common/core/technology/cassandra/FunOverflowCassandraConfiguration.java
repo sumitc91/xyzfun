@@ -2,17 +2,13 @@ package com.funoverflowwebservices.common.core.technology.cassandra;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.data.cassandra.config.CassandraClusterFactoryBean;
 import org.springframework.data.cassandra.config.java.AbstractCassandraConfiguration;
 import org.springframework.data.cassandra.mapping.BasicCassandraMappingContext;
 import org.springframework.data.cassandra.mapping.CassandraMappingContext;
-import org.springframework.data.cassandra.repository.config.EnableCassandraRepositories;
 
 import com.funoverflowwebservices.common.core.utils.config.IConfiguration;
-
 
 /*@Configuration
 @PropertySource(value = { "classpath:properties/cassandra.properties" })
