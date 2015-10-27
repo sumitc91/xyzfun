@@ -9,8 +9,8 @@ import javax.annotation.Resource;
 import org.jivesoftware.smack.ConnectionConfiguration.SecurityMode;
 import org.jivesoftware.smack.SmackException;
 import org.jivesoftware.smack.XMPPException;
-import org.jivesoftware.smack.tcp.XMPPTCPConnection;
-import org.jivesoftware.smack.tcp.XMPPTCPConnectionConfiguration;
+//import org.jivesoftware.smack.tcp.XMPPTCPConnection;
+//import org.jivesoftware.smack.tcp.XMPPTCPConnectionConfiguration;
 import org.jivesoftware.smack.util.TLSUtils;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,7 +26,7 @@ public class XMPPConnection {
 	@Resource
     private Environment environment;
 
-	@Bean
+	/*@Bean
 	public XMPPTCPConnection getXMPPConnection() throws FunOverflowBaseException {
 		XMPPTCPConnectionConfiguration.Builder conf = XMPPTCPConnectionConfiguration.builder();
 		conf.setHost(environment.getProperty("XMPP.HOST"));
@@ -56,6 +56,6 @@ public class XMPPConnection {
 		
 		return connection;
 
-	}
+	}*/
 
 }
