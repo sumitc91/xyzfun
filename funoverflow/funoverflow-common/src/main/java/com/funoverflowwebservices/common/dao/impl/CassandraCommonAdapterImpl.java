@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.funoverflowwebservices.common.core.utils.CassandraSplitStringUtil;
 import com.funoverflowwebservices.common.dao.CassandraCommonAdapter;
 
-@Service("CassandraCommonAdapterImpl")
+//@Service("CassandraCommonAdapterImpl")
 public class CassandraCommonAdapterImpl implements CassandraCommonAdapter {
 
 	@Autowired

@@ -14,9 +14,9 @@ import org.springframework.data.cassandra.repository.config.EnableCassandraRepos
 import com.funoverflowwebservices.common.core.utils.config.IConfiguration;
 
 
-@Configuration
+/*@Configuration
 @PropertySource(value = { "classpath:properties/cassandra.properties" })
-@EnableCassandraRepositories(basePackages = { "com.buddymewebservices" })
+@EnableCassandraRepositories(basePackages = { "com.buddymewebservices" })*/
 public class FunOverflowCassandraConfiguration extends AbstractCassandraConfiguration implements IConfiguration {
 
 	@Autowired

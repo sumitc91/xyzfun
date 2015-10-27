@@ -153,10 +153,10 @@ class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 	<bean id="jsonMessageConverter"
 		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
 
-	<bean id="memcachedClient" class="net.spy.memcached.spring.MemcachedClientFactoryBean">
+	<!-- <bean id="memcachedClient" class="net.spy.memcached.spring.MemcachedClientFactoryBean">
 		<property name="servers" value="${MEMCACHE.HOST.URL}" />
 		<property name="protocol" value="BINARY" />
-	</bean>
+	</bean> -->
 
 	<!-- <bean id="memCacheClient" class="com.funoverflowwebservices.common.core.cache.MemCacheClient" /> -->
 

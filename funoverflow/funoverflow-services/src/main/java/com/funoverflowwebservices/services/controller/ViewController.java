@@ -18,8 +18,9 @@ import com.funoverflowwebservices.common.core.utils.ApiUrlSource;
 
 @Controller
 public class ViewController extends AbstractController{
-	@Autowired
-	CassandraOperations cassandraTemplate;
+	
+	/*@Autowired
+	CassandraOperations cassandraTemplate;*/
 	
 	@Resource(name = "ApiUrlSource")
 	private ApiUrlSource apiUrlSource;
