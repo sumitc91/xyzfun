@@ -32,6 +32,8 @@ public class ImgurImageController extends AbstractController {
 		}
 	}
 	
+	
+	
 	public void upload(BufferedImage image) throws Exception {
 	    String IMGUR_POST_URI = "http://api.imgur.com/2/upload.xml";
 	    String IMGUR_API_KEY = "57d002ed250f982";
