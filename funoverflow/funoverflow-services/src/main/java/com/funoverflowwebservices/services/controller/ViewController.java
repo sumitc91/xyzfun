@@ -1,17 +1,28 @@
 package com.funoverflowwebservices.services.controller;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.cassandra.core.CassandraOperations;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.funoverflowwebservices.common.core.exception.ErrorCodes;
 import com.funoverflowwebservices.common.core.exception.FunOverflowBaseException;
+import com.funoverflowwebservices.common.core.exception.InvalidRequestException;
 import com.funoverflowwebservices.common.core.utils.ApiUrlSource;
+import com.funoverflowwebservices.common.domain.Response;
+import com.funoverflowwebservices.common.request.vo.NewImageInsertRequestObject;
+import com.funoverflowwebservices.services.ImageInsertService;
 
 
 
@@ -21,6 +32,9 @@ public class ViewController extends AbstractController{
 	
 	/*@Autowired
 	CassandraOperations cassandraTemplate;*/
+	
+	@Resource(name = "ImageInsertServiceImpl")
+	protected ImageInsertService imageInsertService;
 	
 	@Resource(name = "ApiUrlSource")
 	private ApiUrlSource apiUrlSource;
@@ -38,5 +52,32 @@ public class ViewController extends AbstractController{
 		return modelAndView;
 	}
 	
+	@RequestMapping(value = "/insertImageToSql", method = RequestMethod.POST, headers = "Accept=*/*")
+	public void insertImageToSql(HttpServletRequest HTTPRequest,
+				               HttpServletResponse HTTPResponse,
+				                @Valid @RequestBody List<NewImageInsertRequestObject> newImageListInsertRequestObject,BindingResult result)
+	{
+		Response response = new Response();
+		
+		if (result.hasErrors()) {
+            log.debug("Request bean validation error.");
+            throw new InvalidRequestException(ErrorCodes.MSG_INVALID_INPUT, HTTPRequest, HTTPResponse, result);
+        }
+		
+		try 
+		{	
+			response=imageInsertService.insertNewImageIntoSql(newImageListInsertRequestObject);			
+			renderView(HTTPRequest, HTTPResponse, response);					
+		} 
+		catch (FunOverflowBaseException buddyMeBaseException) 
+		{
+			log.error("insertNewImageIntoSql Exception", buddyMeBaseException);
+			response.setResponseCode(buddyMeBaseException.getErrorCode());
+			response.setResponseMessage("insertNewImageIntoSql Exception");
+			response.setResponseDetails("ERROR", buddyMeBaseException.getMessage());
+			renderView(HTTPRequest, HTTPResponse, response);
+		}
+		
+	}
 	
 }

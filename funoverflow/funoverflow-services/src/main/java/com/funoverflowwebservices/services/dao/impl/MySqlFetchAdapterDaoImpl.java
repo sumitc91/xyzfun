@@ -24,6 +24,24 @@ public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchA
 	@Resource(name = "ApiUrlSource")
 	private ApiUrlSource apiUrlSource;
 	
+	/*public static void main(String args[])
+	{
+		System.out.println("testing..");
+		List<NewImageInsertRequestObject> newImageList = new ArrayList<NewImageInsertRequestObject>();
+		NewImageInsertRequestObject newImageInsertRequestObject = new NewImageInsertRequestObject();
+		newImageInsertRequestObject.setAuthor("Author");
+		newImageInsertRequestObject.setCategory("Category");
+		newImageList.add(newImageInsertRequestObject);
+		
+		MySqlFetchAdapterDaoImpl mySqlFetchAdapterDaoImpl = new MySqlFetchAdapterDaoImpl();
+		try {
+			mySqlFetchAdapterDaoImpl.insertImageInMySqlDB(newImageList);
+		} catch (FunOverflowBaseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}*/
+	
 	public Map<String,String> insertImageInMySqlDB(List<NewImageInsertRequestObject> newImageList) throws FunOverflowBaseException
 	{
 		Map<String,String> response =new  HashMap<String,String>();
