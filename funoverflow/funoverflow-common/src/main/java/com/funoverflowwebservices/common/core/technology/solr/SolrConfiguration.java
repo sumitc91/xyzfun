@@ -15,69 +15,20 @@ import com.funoverflowwebservices.common.core.utils.config.IConfiguration;
 
 @Configuration
 @PropertySource(value = { "classpath:properties/solr.properties" })
-@EnableSolrRepositories(basePackages = { "com.buddymewebservices" })
+@EnableSolrRepositories(basePackages = { "com.funoverflowwebservices" })
 public class SolrConfiguration implements IConfiguration {
     
     @Resource
     private Environment environment;
     
-    @Bean(name="solrBuddyMeUserMasterTemplate")
-    public SolrTemplate solrBuddyMeUserMasterTemplate() throws FunOverflowBaseException{
+    @Bean(name="solrFunoverflowTemplate")
+    public SolrTemplate solrFunoverflowTemplate() throws FunOverflowBaseException{
         try {
-            HttpSolrServer solrServer = new HttpSolrServer(environment.getRequiredProperty("solr.server.url.user.master"));
+            HttpSolrServer solrServer = new HttpSolrServer(environment.getRequiredProperty("solr.server.url.funoverflow"));
             return new SolrTemplate(solrServer);
         } catch (Exception e) {
-            throw new FunOverflowBaseException("90", "BuddyMe User Master Core connection exception", e, false);
+            throw new FunOverflowBaseException("90", "Funoverflow Core connection exception", e, false);
         }
     }
     
-    @Bean(name="solrBuddyMeUserSlaveTemplate")
-    public SolrTemplate solrBuddyMeUserSlaveTemplate() throws FunOverflowBaseException{
-        try {
-            HttpSolrServer solrServer = new HttpSolrServer(environment.getRequiredProperty("solr.server.url.user.slave"));
-            return new SolrTemplate(solrServer);
-        } catch (Exception e) {
-            throw new FunOverflowBaseException("90", "BuddyMe User Master Core connection exception", e, false);
-        }
-    }
-    
-    @Bean(name="solrBuddyMePublicEventMasterTemplate")
-    public SolrTemplate solrBuddyMePublicEventMasterTemplate() throws FunOverflowBaseException{
-        try {
-            HttpSolrServer solrServer = new HttpSolrServer(environment.getRequiredProperty("solr.server.url.publicevent.master"));
-            return new SolrTemplate(solrServer);
-        } catch (Exception e) {
-            throw new FunOverflowBaseException("90", "BuddyMe User Master Core connection exception", e, false);
-        }
-    }
-    
-    @Bean(name="solrBuddyMePublicEventSlaveTemplate")
-    public SolrTemplate solrBuddyMePublicEventSlaveTemplate() throws FunOverflowBaseException{
-        try {
-            HttpSolrServer solrServer = new HttpSolrServer(environment.getRequiredProperty("solr.server.url.publicevent.slave"));
-            return new SolrTemplate(solrServer);
-        } catch (Exception e) {
-            throw new FunOverflowBaseException("90", "BuddyMe User Master Core connection exception", e, false);
-        }
-    }
-    
-    @Bean(name="solrBuddyMePrivateEventMasterTemplate")
-    public SolrTemplate solrBuddyMePrivateEventMasterTemplate() throws FunOverflowBaseException{
-        try {
-            HttpSolrServer solrServer = new HttpSolrServer(environment.getRequiredProperty("solr.server.url.privateevent.master"));
-            return new SolrTemplate(solrServer);
-        } catch (Exception e) {
-            throw new FunOverflowBaseException("90", "BuddyMe User Master Core connection exception", e, false);
-        }
-    }
-    
-    @Bean(name="solrBuddyMePrivateEventSlaveTemplate")
-    public SolrTemplate solrBuddyMePrivateEventSlaveTemplate() throws FunOverflowBaseException{
-        try {
-            HttpSolrServer solrServer = new HttpSolrServer(environment.getRequiredProperty("solr.server.url.privateevent.slave"));
-            return new SolrTemplate(solrServer);
-        } catch (Exception e) {
-            throw new FunOverflowBaseException("90", "BuddyMe User Master Core connection exception", e, false);
-        }
-    }
 } 

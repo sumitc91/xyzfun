@@ -70,12 +70,12 @@ public class ViewController extends AbstractController{
 			response=imageInsertService.insertNewImageIntoSql(newImageListInsertRequestObject);			
 			renderView(HTTPRequest, HTTPResponse, response);					
 		} 
-		catch (FunOverflowBaseException buddyMeBaseException) 
+		catch (FunOverflowBaseException funOverflowBaseException) 
 		{
-			log.error("insertNewImageIntoSql Exception", buddyMeBaseException);
-			response.setResponseCode(buddyMeBaseException.getErrorCode());
+			log.error("insertNewImageIntoSql Exception", funOverflowBaseException);
+			response.setResponseCode(funOverflowBaseException.getErrorCode());
 			response.setResponseMessage("insertNewImageIntoSql Exception");
-			response.setResponseDetails("ERROR", buddyMeBaseException.getMessage());
+			response.setResponseDetails("ERROR", funOverflowBaseException.getMessage());
 			renderView(HTTPRequest, HTTPResponse, response);
 		}
 		

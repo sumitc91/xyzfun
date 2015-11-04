@@ -50,8 +50,8 @@ public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchA
 	public Map<String,String> insertImageInMySqlDB(List<NewImageInsertRequestObject> newImageList) throws FunOverflowBaseException
 	{
 		Map<String,String> response =new  HashMap<String,String>();
-		String QUERY_IMAGE_INSERT = "INSERT INTO `funoverflow`.`image` (`id`, `imagename`, `height`, `width`, `title`, `description`, `addedby`, `createddate`, `updateddate`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
-		String QUERY_IMAGE_TAGS_INSERT = "INSERT INTO `funoverflow`.`tags` (`id`, `name`, `description`, `createddate`) VALUES (?, ?, ?, ?);";
+		String QUERY_IMAGE_INSERT = "INSERT INTO `funoverflow`.`image` (`id`, `imagename`, `height`, `width`, `title`, `description`, `addedby`, `createddate`, `updateddate`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		String QUERY_IMAGE_TAGS_INSERT = "INSERT INTO `funoverflow`.`tags` (`imageid`,`name`, `description`, `createddate`) VALUES (?, ?, ?, ?)";
 
 		logger.info(QUERY_IMAGE_INSERT);
 		int adminId = 1;
@@ -60,6 +60,7 @@ public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchA
 			List<Object[]> inputList = new ArrayList<Object[]>();
 			List<Object[]> inputListTags = new ArrayList<Object[]>();
 			for (NewImageInsertRequestObject newImageInsertRequestObject : newImageList) {
+				newImageInsertRequestObject.setImagename(newImageInsertRequestObject.getId()+"__.gif");
 				Object[] inputArray = {
 						newImageInsertRequestObject.getId(),
 						newImageInsertRequestObject.getImagename(),
@@ -71,7 +72,7 @@ public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchA
 						DateTimeUtil.getCurrentDateTimeGMT(),
 						DateTimeUtil.getCurrentDateTimeGMT()};
 				
-				for (String tag : newImageInsertRequestObject.getTags().split(",")) {
+				for (String tag : newImageInsertRequestObject.getTags().split(";")) {
 					Object[] inputArrayTags = {
 							newImageInsertRequestObject.getId(),
 							tag,
