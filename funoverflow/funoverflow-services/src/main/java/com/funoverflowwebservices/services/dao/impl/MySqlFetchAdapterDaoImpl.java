@@ -1,5 +1,6 @@
 package com.funoverflowwebservices.services.dao.impl;
 
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -9,11 +10,15 @@ import javax.annotation.Resource;
 
 import org.apache.log4j.Logger;
 import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.SqlOutParameter;
+import org.springframework.jdbc.core.SqlParameter;
+import org.springframework.jdbc.core.simple.SimpleJdbcCall;
 import org.springframework.stereotype.Service;
 
 import com.funoverflowwebservices.common.core.exception.FunOverflowBaseException;
 import com.funoverflowwebservices.common.core.technology.mysql.AbstractDAO;
 import com.funoverflowwebservices.common.core.utils.ApiUrlSource;
+import com.funoverflowwebservices.common.core.utils.DateTimeUtil;
 import com.funoverflowwebservices.common.request.vo.NewImageInsertRequestObject;
 import com.funoverflowwebservices.services.dao.MySqlFetchAdapterDao;
 
@@ -43,6 +48,126 @@ public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchA
 	}*/
 	
 	public Map<String,String> insertImageInMySqlDB(List<NewImageInsertRequestObject> newImageList) throws FunOverflowBaseException
+	{
+		Map<String,String> response =new  HashMap<String,String>();
+		String QUERY_IMAGE_INSERT = "INSERT INTO `funoverflow`.`image` (`id`, `imagename`, `height`, `width`, `title`, `description`, `addedby`, `createddate`, `updateddate`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
+		String QUERY_IMAGE_TAGS_INSERT = "INSERT INTO `funoverflow`.`tags` (`id`, `name`, `description`, `createddate`) VALUES (?, ?, ?, ?);";
+
+		logger.info(QUERY_IMAGE_INSERT);
+		int adminId = 1;
+		
+		try {
+			List<Object[]> inputList = new ArrayList<Object[]>();
+			List<Object[]> inputListTags = new ArrayList<Object[]>();
+			for (NewImageInsertRequestObject newImageInsertRequestObject : newImageList) {
+				Object[] inputArray = {
+						newImageInsertRequestObject.getId(),
+						newImageInsertRequestObject.getImagename(),
+						newImageInsertRequestObject.getHeight(),
+						newImageInsertRequestObject.getWidth(),
+						newImageInsertRequestObject.getTitle(),
+						newImageInsertRequestObject.getDescription(),
+						adminId,
+						DateTimeUtil.getCurrentDateTimeGMT(),
+						DateTimeUtil.getCurrentDateTimeGMT()};
+				
+				for (String tag : newImageInsertRequestObject.getTags().split(",")) {
+					Object[] inputArrayTags = {
+							newImageInsertRequestObject.getId(),
+							tag,
+							null,
+							DateTimeUtil.getCurrentDateTimeGMT()};
+					inputListTags.add(inputArrayTags);
+				}
+
+				inputList.add(inputArray);
+			}
+
+			getJdbcTemplate().batchUpdate(
+					QUERY_IMAGE_INSERT, inputList);
+			getJdbcTemplate().batchUpdate(
+					QUERY_IMAGE_TAGS_INSERT, inputListTags);
+			
+			return response;
+		} catch (DataAccessException e) {
+			throw new FunOverflowBaseException(
+					"error in insertImageInMySqlDB", "90", e, false);
+		}
+		
+	}
+	public Map<String,String> insertImageInMySqlDB_storedProd(List<NewImageInsertRequestObject> newImageList) throws FunOverflowBaseException
+	{
+		Map<String,String> response =new  HashMap<String,String>();
+		
+		int userid = 1;
+		
+		for (NewImageInsertRequestObject newImageInsertRequestObject : newImageList) {
+			
+			Object[] accountArray = {
+					newImageInsertRequestObject.getImagename(),
+					newImageInsertRequestObject.getHeight(),
+					newImageInsertRequestObject.getWidth(),
+					newImageInsertRequestObject.getTitle(),
+					newImageInsertRequestObject.getDescription(),
+					userid
+			};
+
+			logger.info("insert new image api called :>>>" + newImageInsertRequestObject);
+
+			SimpleJdbcCall procedure = new SimpleJdbcCall(getJdbcTemplate());
+			procedure
+					.withProcedureName("`funoverflow`.`insertnewimage`")
+					.withoutProcedureColumnMetaDataAccess()
+					.useInParameterNames("imagename", "height", "width",
+							"title", "description", "userid")
+					.declareParameters(
+							new SqlParameter("imagename", Types.VARCHAR),
+							new SqlParameter("height", Types.INTEGER),
+							new SqlParameter("width", Types.INTEGER),
+							new SqlParameter("title", Types.VARCHAR),
+							new SqlParameter("description", Types.VARCHAR),
+							new SqlParameter("userid", Types.INTEGER));
+
+			Map<String, Object> procInputs = new HashMap<String, Object>();
+			procInputs.put("imagename", accountArray[0]);
+			procInputs.put("height", accountArray[1]);
+			procInputs.put("width", accountArray[2]);
+			procInputs.put("title", accountArray[3]);
+			procInputs.put("description", accountArray[4]);
+			procInputs.put("userid", accountArray[5]);
+			
+
+			Map<?, ?> procOutput = new HashMap<Object, Object>();
+			try {
+				procOutput = procedure.execute(procInputs);
+			} catch (Exception e) {
+				logger.error("insert new image exception", e);
+			}
+
+			logger.debug("insert new image procedure output : "
+					+ procOutput);
+
+			if (null != procOutput) {
+
+				/*if (procOutput.get("isUniversityUser") != null) {
+					int isUniversityUser = Integer.parseInt(procOutput.get(
+							"isUniversityUser").toString());
+					String groupId = (String) procOutput.get("groupId");
+					if (isUniversityUser == 1) {
+						//response.setIsUniversityUser(isUniversityUser);
+						//response.setGroupId(groupId);
+					}
+				} else {
+					//response.setIsUniversityUser(0);// if user is not from
+													// university set value to zero.
+				}*/
+			}	
+		}
+		
+		return response;	
+	}
+	
+	public Map<String,String> insertImageInMySqlDB_Prev(List<NewImageInsertRequestObject> newImageList) throws FunOverflowBaseException
 	{
 		Map<String,String> response =new  HashMap<String,String>();
 		String QUERY_INSERT_DISTRIBUTION_GROUP = "INSERT INTO `funoverflow`.`funImages` (`title`, `subject`, `description`, `comments`, `author`, `tags`, `category`, `imageurl_s`, `imageurl_l`, `lastmodified`, `views`, `likes`, `dislikes`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";

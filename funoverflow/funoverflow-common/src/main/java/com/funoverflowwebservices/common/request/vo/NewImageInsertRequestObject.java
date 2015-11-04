@@ -17,12 +17,18 @@ public class NewImageInsertRequestObject extends BaseEntity{
 	private String author;
 	private String tags;
 	private String category;
+	private String imagename;
+	private int height;
+	private int width;
 	private String imageurl_s;
 	private String imageurl_l;
 	private String last_modified;
 	private String views;
 	private String likes;
 	private String dislikes;
+	private String username;
+	private String password;
+	
 	public String getId() {
 		return id;
 	}
@@ -111,16 +117,50 @@ public class NewImageInsertRequestObject extends BaseEntity{
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	public String getImagename() {
+		return imagename;
+	}
+	public void setImagename(String imagename) {
+		this.imagename = imagename;
+	}
+	
+	public int getHeight() {
+		return height;
+	}
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	public int getWidth() {
+		return width;
+	}
+	public void setWidth(int width) {
+		this.width = width;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	@Override
 	public String toString() {
 		return "NewImageInsertRequestObject [id=" + id + ", title=" + title
 				+ ", subject=" + subject + ", description=" + description
 				+ ", comments=" + comments + ", author=" + author + ", tags="
-				+ tags + ", category=" + category + ", imageurl_s="
+				+ tags + ", category=" + category + ", imagename=" + imagename
+				+ ", height=" + height + ", width=" + width + ", imageurl_s="
 				+ imageurl_s + ", imageurl_l=" + imageurl_l
 				+ ", last_modified=" + last_modified + ", views=" + views
-				+ ", likes=" + likes + ", dislikes=" + dislikes + "]";
+				+ ", likes=" + likes + ", dislikes=" + dislikes + ", username="
+				+ username + ", password=" + password + "]";
 	}
+	
 	
 	
 	
