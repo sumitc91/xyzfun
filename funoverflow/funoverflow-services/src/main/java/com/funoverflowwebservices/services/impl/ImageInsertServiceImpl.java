@@ -12,6 +12,7 @@ import com.funoverflowwebservices.common.domain.Response;
 import com.funoverflowwebservices.common.request.vo.NewImageInsertRequestObject;
 import com.funoverflowwebservices.services.ImageInsertService;
 import com.funoverflowwebservices.services.dao.MySqlFetchAdapterDao;
+import com.funoverflowwebservices.services.dao.impl.SolrSaveAdapter;
 
 @Service("ImageInsertServiceImpl")
 public class ImageInsertServiceImpl implements ImageInsertService {
@@ -19,13 +20,17 @@ public class ImageInsertServiceImpl implements ImageInsertService {
 	@Autowired
 	MySqlFetchAdapterDao mySqlFetchAdapterDao;
 	
+	@Autowired
+	SolrSaveAdapter solrSaveAdapter;
+	
 	public Response insertNewImageIntoSql(
 			List<NewImageInsertRequestObject> newImageListInsertRequestObject)
 			throws FunOverflowBaseException {
 		
 		Response response = new Response();
 		Map<String,String> responseMap = new HashMap<String,String>();
-		responseMap = mySqlFetchAdapterDao.insertImageInMySqlDB(newImageListInsertRequestObject);
+		//responseMap = mySqlFetchAdapterDao.insertImageInMySqlDB(newImageListInsertRequestObject);
+		solrSaveAdapter.insertNewImage();
 		response.setResponseCode("200");
 		response.setResponseMessage("success");
 		response.setResponseDetails("result", responseMap);
