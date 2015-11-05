@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+							http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+							http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+							http://www.springframework.org/schema/oxm
+							http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd
+							http://www.springframework.org/schema/util
+  							http://www.springframework.org/schema/util/spring-util-3.0.xsd
+  							http://www.springframework.org/schema/cache
+           http://www.springframework.org/schema/cache/spring-cache-3.1.xsd">
+
+	<context:annotation-config />
+
+	<context:component-scan base-package="com.funoverflowwebservices.common" />
+
+	<!-- <cache:annotation-driven /> -->
+
+	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate" />
+
+
+	<!-- Annotation Handler Mapping -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<util:list id="beanList">
+				<ref bean="jsonMessageConverter" />
+			</util:list>
+		</property>
+	</bean>
+
+	<!-- Application Configuration Properties -->
+	<bean id="placeholderConfig"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:properties/database.properties</value>
+				<value>classpath:properties/smtp.properties</value>
+				<value>classpath:properties/apiUrl.properties</value>
+				<value>classpath:properties/cache.properties</value>
+				<value>classpath:properties/jms.properties</value>
+				<value>classpath:properties/xmpp.properties</value>
+			</list>
+		</property>
+	</bean>
+	<!-- Database Connection Properties -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${JDBC.DRIVER}" />
+		<property name="url" value="${JDBC.OAUTH.URL}" />
+		<property name="username" value="${DB.USERNAME}" />
+		<property name="password" value="${DB.PASSWORD}" />
+		<property name="initialSize" value="${CONNECTION.POOL.INITAL.SIZE}" />
+		<property name="maxActive" value="${CONNECTION.POOL.MAX.SIZE}" />
+	</bean>
+
+	<bean id="SmtpConfig" class="com.funoverflowwebservices.common.core.vo.SmtpConfig"
+
+              p:mailSmtpHost="${MAIL.SMTP.HOST}" p:mailSmtpUser="${MAIL.SMTP.USER}"
+
+              p:mailSmtpPassword="${MAIL.SMTP.PASSWORD}" p:mailSmtpPort="${MAIL.SMTP.PORT}"
+
+              p:mailSmtpFrom="${SMTP.MAIL.FROM}" p:contactUsSendTo="${MAIL.CONTACTUS.TO}"
+
+              p:dataFeedBackSendTo="${MAIL.DATAFEEDBACK.TO}" p:adminAddress="${MAIL.ADMIN.TO}" />
+
+ 
+
+       <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+
+              <property name="host" value="${MAIL.SMTP.HOST}" />
+
+              <property name="port" value="${MAIL.SMTP.PORT}" />
+
+               <property name="username" value="${MAIL.SMTP.USER}" />
+
+              <property name="password" value="${MAIL.SMTP.PASSWORD}" />
+
+              <property name="javaMailProperties">
+
+                     <props>
+
+                           <!-- Use SMTP transport protocol -->
+
+                           <prop key="mail.transport.protocol">smtp</prop>
+
+                           <!-- Use SMTP-AUTH to authenticate to SMTP server -->
+
+                           <prop key="mail.smtp.auth">true</prop>
+
+                           <!-- Use TLS to encrypt communication with SMTP server -->
+
+                           <prop key="mail.smtp.starttls.enable">true</prop>
+
+                           <prop key="mail.debug">true</prop>
+
+                     </props>
+
+              </property>
+
+       </bean>
+
+       
+
+       <bean id="velocityEngine"
+
+              class="org.springframework.ui.velocity.VelocityEngineFactoryBean"
+
+              p:resourceLoaderPath="classpath:properties"
+
+              p:preferFileSystemAccess="false" />
+
+              
+
+<bean id="transactionManager"
+
+class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+
+<property name="dataSource" ref="dataSource"></property>
+
+</bean>
+
+
+
+	<bean id="jsonView"
+		class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+		<property name="contentType" value="application/json;charset=UTF-8" />
+		<property name="disableCaching" value="false" />
+	</bean>
+
+
+	<bean id="xmlView"
+		class="org.springframework.web.servlet.view.xml.MarshallingView">
+		<property name="contentType" value="application/xml;charset=UTF-8" />
+		<constructor-arg>
+			<ref bean="xstreamMarshaller" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="xstreamMarshaller" class="org.springframework.oxm.xstream.XStreamMarshaller">
+		<property name="aliases">
+			<props>
+				<prop key="response">com.funoverflowwebservices.common.domain.Response</prop>
+			</props>
+		</property>
+		<property name="mode" value="1002" />
+	</bean>
+
+	<!-- Converts JSON to POJO for input Request -->
+	<bean id="jsonMessageConverter"
+		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+
+
+	<!-- <bean id="memcachedClient" class="net.spy.memcached.spring.MemcachedClientFactoryBean">
+		<property name="servers" value="${MEMCACHE.HOST.URL}" />
+		<property name="protocol" value="BINARY" />
+	</bean> -->
+
+
+	<!-- <bean id="memCacheClient" class="com.funoverflowwebservices.common.core.cache.MemCacheClient" /> -->
+
+</beans>

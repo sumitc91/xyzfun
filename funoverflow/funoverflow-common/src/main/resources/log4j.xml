@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" 
+    "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="false">
+
+	<appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
+		<param name="Threshold" value="TRACE" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%t|%d|%X{sessionid}|%-5p|%C|%M|%L|%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="rollingFileAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="Threshold" value="DEBUG" />
+		<param name="File" value="${catalina.home}/logs/funoverflow_debug.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%t|%d|%X{sessionid}|%-5p|%C|%M|%L|%m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="rollingFileAppendercron" class="org.apache.log4j.RollingFileAppender">
+		<param name="Threshold" value="DEBUG" />
+		<param name="File" value="${catalina.home}/logs/funoverflow_debug_cron.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%t|%d|%X{sessionid}|%-5p|%C|%M|%L|%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="rollingFileAppenderForSpring" class="org.apache.log4j.RollingFileAppender">
+		<param name="Threshold" value="DEBUG" />
+		<param name="File" value="${catalina.home}/logs/funoverflow_SpringDebug.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%t|%d|%X{sessionid}|%-5p|%C|%M|%L|%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="dailyRollingFileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${catalina.home}/logs/funoverflow_Info.log" />
+		<param name="DatePattern" value="'_'yyyy-MM-dd" />
+		<param name="threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%t|%d{DATE}|%X{sessionid}|%-5p|%C|%M|%L|%m%n" />
+		</layout>
+	</appender>
+
+	
+	<logger name="com.funoverflowwebservices" additivity="false">
+		<level value="ALL" />
+		<appender-ref ref="consoleAppender" />
+		<appender-ref ref="rollingFileAppender" />
+	</logger>
+	
+	
+
+	<logger name="org.springframework" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="consoleAppender" />
+		<appender-ref ref="rollingFileAppenderForSpring" />
+	</logger>
+	
+	<logger name="org.springframework.jdbc.core">
+    <level value="trace" />
+    <appender-ref ref="consoleAppender" />
+     </logger>
+     
+     <logger name="org.springframework.jdbc.core.JdbcTemplate">
+    <level value="debug" />
+    <appender-ref ref="consoleAppender" />
+     </logger>
+</log4j:configuration>
