@@ -1,5 +1,6 @@
 package com.funoverflowwebservices.services.controller;
 
+import java.io.IOException;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -7,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import org.apache.solr.client.solrj.SolrServerException;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -30,7 +32,7 @@ public class ImageInsertController extends AbstractController{
 	@RequestMapping(value = "/insertImageToSql", method = RequestMethod.POST, headers = "Accept=*/*")
 	public void insertImageToSql(HttpServletRequest HTTPRequest,
 				               HttpServletResponse HTTPResponse,
-				                @Valid @RequestBody List<NewImageInsertRequestObject> newImageListInsertRequestObject,BindingResult result)
+				                @Valid @RequestBody List<NewImageInsertRequestObject> newImageListInsertRequestObject,BindingResult result) throws SolrServerException, IOException
 	{
 		Response response = new Response();
 		

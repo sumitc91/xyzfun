@@ -1,5 +1,7 @@
 package com.funoverflowwebservices.services.dao.impl;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Types;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +12,7 @@ import javax.annotation.Resource;
 
 import org.apache.log4j.Logger;
 import org.springframework.dao.DataAccessException;
-import org.springframework.jdbc.core.SqlOutParameter;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.SqlParameter;
 import org.springframework.jdbc.core.simple.SimpleJdbcCall;
 import org.springframework.stereotype.Service;
@@ -19,6 +21,7 @@ import com.funoverflowwebservices.common.core.exception.FunOverflowBaseException
 import com.funoverflowwebservices.common.core.technology.mysql.AbstractDAO;
 import com.funoverflowwebservices.common.core.utils.ApiUrlSource;
 import com.funoverflowwebservices.common.core.utils.DateTimeUtil;
+import com.funoverflowwebservices.common.core.vo.SolrInsertImageEntity;
 import com.funoverflowwebservices.common.request.vo.NewImageInsertRequestObject;
 import com.funoverflowwebservices.services.dao.MySqlFetchAdapterDao;
 
@@ -26,6 +29,9 @@ import com.funoverflowwebservices.services.dao.MySqlFetchAdapterDao;
 public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchAdapterDao{
 
 	private Logger logger = Logger.getLogger(this.getClass());
+	
+	 private static final String SINGLE_QUOTE = "\'";
+	 
 	@Resource(name = "ApiUrlSource")
 	private ApiUrlSource apiUrlSource;
 	
@@ -47,6 +53,7 @@ public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchA
 		}
 	}*/
 	
+	
 	public Map<String,String> insertImageInMySqlDB(List<NewImageInsertRequestObject> newImageList) throws FunOverflowBaseException
 	{
 		Map<String,String> response =new  HashMap<String,String>();
@@ -54,7 +61,6 @@ public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchA
 		String QUERY_IMAGE_TAGS_INSERT = "INSERT INTO `funoverflow`.`tags` (`imageid`,`name`, `description`, `createddate`) VALUES (?, ?, ?, ?)";
 
 		logger.info(QUERY_IMAGE_INSERT);
-		int adminId = 1;
 		
 		try {
 			List<Object[]> inputList = new ArrayList<Object[]>();
@@ -68,7 +74,7 @@ public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchA
 						newImageInsertRequestObject.getWidth(),
 						newImageInsertRequestObject.getTitle(),
 						newImageInsertRequestObject.getDescription(),
-						adminId,
+						Integer.parseInt(newImageInsertRequestObject.getAuthor()),
 						DateTimeUtil.getCurrentDateTimeGMT(),
 						DateTimeUtil.getCurrentDateTimeGMT()};
 				
@@ -204,5 +210,34 @@ public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchA
 			throw new FunOverflowBaseException(
 					"error in insertDistributionGroupList", "90", e, false);
 		}
+	}
+	public List<SolrInsertImageEntity> getImageDetailsFromMySqlDB(
+			int fromId, int toId) throws FunOverflowBaseException {
+		String Query = "SELECT image.id id ,tags.imageid tagid,image.imagename imagename,image.title title,image.description description,image.addedby addedby,image.updateddate updateddate,GROUP_CONCAT(DISTINCT (`tags`.`name`)) tags FROM funoverflow.image image  join funoverflow.tags tags where image.id=tags.imageid and image.id>="+fromId+" and image.id<="+toId+" group by tags.imageid ;";
+
+	        logger.info(Query);
+	        List<SolrInsertImageEntity> listSolrInsertImageEntity = new ArrayList<SolrInsertImageEntity>();
+	        try {
+	        	listSolrInsertImageEntity = getJdbcTemplate().query(Query,
+	                new RowMapper<SolrInsertImageEntity>() {
+
+	                    public SolrInsertImageEntity mapRow(ResultSet rs, int arg1) throws SQLException {
+	                    	SolrInsertImageEntity solrInsertImageEntity = new SolrInsertImageEntity();
+
+	                    	solrInsertImageEntity.setAuthor(rs.getString("addedby"));
+	                    	solrInsertImageEntity.setDescription(rs.getString("description"));
+	                    	solrInsertImageEntity.setId(rs.getString("id"));
+	                    	solrInsertImageEntity.setImageurl_l(rs.getString("imagename"));
+	                    	solrInsertImageEntity.setLast_modified(rs.getString("updateddate"));
+	                    	solrInsertImageEntity.setTagsString(rs.getString("tags"));
+	                    	solrInsertImageEntity.setTitle(rs.getString("title"));
+	                        
+	                        return solrInsertImageEntity;
+	                    }
+	                });
+	        } catch (DataAccessException e) {
+	            throw new FunOverflowBaseException("getImageDetailsFromMySqlDB exception", "90", e, false);
+	        }
+			return listSolrInsertImageEntity;
 	}
 }

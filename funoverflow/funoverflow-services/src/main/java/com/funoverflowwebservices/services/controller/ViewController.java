@@ -1,5 +1,6 @@
 package com.funoverflowwebservices.services.controller;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import org.apache.solr.client.solrj.SolrServerException;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -54,7 +56,7 @@ public class ViewController extends AbstractController{
 	@RequestMapping(value = "/insertImageToSql", method = RequestMethod.POST, headers = "Accept=*/*")
 	public void insertImageToSql(HttpServletRequest HTTPRequest,
 				               HttpServletResponse HTTPResponse,
-				                @Valid @RequestBody List<NewImageInsertRequestObject> newImageListInsertRequestObject,BindingResult result)
+				                @Valid @RequestBody List<NewImageInsertRequestObject> newImageListInsertRequestObject,BindingResult result) throws SolrServerException, IOException
 	{
 		Response response = new Response();
 		
@@ -81,4 +83,28 @@ public class ViewController extends AbstractController{
 		
 	}
 	
+	@RequestMapping(value = "/moveSqlImagesToSolr")
+	public ModelAndView moveSqlImagesToSolr(HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse) throws FunOverflowBaseException, SolrServerException, IOException{
+		
+		Response response = new Response();
+		ModelAndView modelAndView =new ModelAndView();
+		modelAndView.setViewName("activation");
+		String message;
+		try 
+		{
+			imageInsertService.fetchAndInsertNewImageFromMySqlToSolr();
+		}
+		catch (FunOverflowBaseException funOverflowBaseException) 
+		{
+			log.error("insertNewImageIntoSql Exception", funOverflowBaseException);
+			/*response.setResponseCode(funOverflowBaseException.getErrorCode());
+			response.setResponseMessage("insertNewImageIntoSql Exception");
+			response.setResponseDetails("ERROR", funOverflowBaseException.getMessage());
+			renderView(httpServletRequest, httpServletResponse, response);*/
+		}
+		message = "success";
+		
+		modelAndView.addObject("message",message );
+		return modelAndView;
+	}
 }
