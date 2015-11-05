@@ -1,0 +1,2013 @@
+1 : Leaving on friday evening while nothing works anymore
+2 : Checking how the intern is doing
+3 : Employer - employee relationship
+4 : When a colleague launches with success a SQL query I launched 10 times with no result
+5 : Showing to a client how his new app works with a mockup
+6 : When the intern asks me to rewrite one of my functions because he doesn&#8217;t understand it
+7 : Compile for the first time a big program and it works instantly
+8 : When the boss gives me my afternoon because I worked well
+9 : Users, after a password policy changes
+10 : When I end up in a project with an unkown framework
+11 : When the client wants to modify a feature I just developed
+12 : Testing my website in IE for the first time
+13 : When I finally get root privileges
+14 : Waking up on the day of a Sprint Planning meeting
+15 : First bugfix on monday
+16 : When I realize I just&nbsp;went through more than 100 pages on thecodinglove.com
+17 : Leaving the office before my holidays
+18 : Intern trying to fix a bug in production
+The thread 0x2034 has exited with code 259 (0x103).
+19 : When half of the compilation errors disappear in a glimpse
+20 : When they ask me to work with a language I don&#8217;t know at all
+21 : Launching my code for the first time
+22 : When I have to support Microsoft Edge
+23 : When a colleague says that my code is useless
+24 : When I have to write the documentation
+25 : Programming without specs
+26 : After 8h of debugging
+27 : When the intern successes to implement a feature I couldn&#8217;t make work in a month
+28 : After I asked for a raise
+29 : DROP TABLE
+30 : Trying to migrate the website
+31 : Going to work on Monday morning reminding me that I broke the project last Friday
+32 : When I hear the boss talking about a hotfix on a Friday evening
+33 : Arguing with teammates in order to know who will publish to production
+34 : Intern beginning to develop his own module
+35 : When I almost get out from this shitty project
+36 : Showing the final version to the client
+37 : When someone wants to show me a bug and can&#8217;t reproduce it in front of me
+38 : When the client absolutely wants HTML5/CSS3 while he&#8217;s using IE7
+39 : Specifying new features with the client
+The thread 0x104 has exited with code 259 (0x103).
+The thread 0x1024 has exited with code 259 (0x103).
+40 : When a old project of mine is handed to the intern
+41 : When the boss is out of the office
+42 : Running the completed app for the first time
+43 : Chasing that elusive bug
+44 : Receiving mails telling me something&#8217;s badly broken while I&#8217;m on vacation
+45 : Easily fixing a bug while in a rush
+46 : Monday mornings
+47 : Leaving earlier on friday
+48 : Senior developer handles an unexpected error in production
+49 : Intern comes for help
+50 : Sales guy talking about the new client requests in front of me
+51 : When I finally fix that bug
+52 : Git merge
+53 : Receiving a compliment from the boss
+54 : When a merge goes well&#8230; until the first merge conflict
+55 : Before working on old legacy code
+56 : Spent my day on the phone for technical support
+57 : When the manager is yelling at a developer in the open space
+58 : People using &#8216;123456&#8217; as a password
+59 : Editing my code after holidays
+60 : When the intern show me an awful code and I write only one line for the same job
+61 : Monday morning
+62 : Leaving work on Fridays
+63 : When I am not handling exceptions correctly
+64 : How it feels to deploy a big feature
+65 : When I tell my team about the complicated algorithm I implemented
+66 : Trying to remove a major dependency from the project
+67 : Boss is coming
+68 : When my page has to be &#8216;pixel perfect&#8217;
+69 : Realising I just broke the production
+70 : Launching my new computer
+71 : Badly using a framework and it still works
+72 : Demo going bad
+73 : Trying out my custom code in a new framework
+74 : Reading the specs of my new project
+75 : When my colleague gets the project I wanted
+76 : When a user doesn&#8217;t stop asking dumb questions
+77 : Summer internships
+78 : Developing a Silverlight Web app for a client in 2015
+79 : When the new intern suddenly says his favorite programming language is CSS
+80 : When i&#8217;m too excited with the new project
+81 : Monday morning
+The thread 0x226c has exited with code 259 (0x103).
+82 : Friday evening
+83 : Senior developers working together
+84 : Visiting thecodinglove during an important meeting at work
+85 : When my team commits fail, but mine merge fine
+86 : "I don&#8217;t need to test this."
+87 : Copying a function which was previously not working and seeing it work correctly
+88 : New module perfectly fitting in my project
+89 : Fixing the client&#8217;s laptop with a reboot
+90 : Telling the price of a new feature to the client
+91 : User experience
+92 : When the boss is right behind me
+93 : CTRL + Z
+94 : Git push &#8212;force
+95 : Doing a fake demo in front of the clients
+96 : When they ask me to fix a lot of minor bugs
+97 : When a senior dev comes to save us
+98 : When I start coding without doing analysis before
+99 : Intern telling me he edited my code
+100 : Noticing a huge bug during the release
+101 : Monday morning
+102 : Receiving client&#8217;s complaints on friday evening
+103 : Reading legacy code for the first time
+104 : When they ask me to work on an old Fortran code
+The thread 0x259c has exited with code 259 (0x103).
+105 : Easily fixing a lot of small bugs
+106 : When the intern wants to participate on my project
+107 : Deadline approaching
+108 : When a girl enters in the open space
+109 : When the sales guy introduces me to the client
+110 : Trying to leave with the client&#8217;s stuff at a meeting
+111 : When the client wants a last feature right before the deadline
+112 : When QA files a bug report without any helpful description
+113 : Showing a techno that I master
+114 : When I just found a library that finishes my work within seconds
+115 : When my IDE crashes with no warning
+116 : When the sales guy proudly shows an unfinished project
+117 : When I have to edit legacy code
+118 : When the intern chases a bug
+119 : When management releases code I committed the night before
+120 : Asynchronous program
+121 : Starting to code without reading completely the specs
+122 : When someone is looking after me on a friday evening
+123 : The office staff on Friday afternoon before a bank holiday weekend
+124 : Senior developer bugfixing
+The thread 0x1500 has exited with code 259 (0x103).
+125 : When I see the intern&#8217;s code
+126 : When my question gets upvotes on Stack Overflow but no one answers it
+127 : Trying to remember one of the 20 passwords I usually use
+128 : When they deploy a new release and I forgot to merge my changes
+129 : PM asking who sent the last commit
+130 : Looking at the intern&#8217;s code
+131 : When my thread refuses to stop
+132 : Fixing a regularly updated list of bugs
+133 : When my SVN commit is messed up
+134 : When somebody asks me what my old code does
+135 : Testing a senior developer&#8217;s code
+136 : Accidentally clicking on &#8220;Restart now&#8221; instead of &#8220;Postpone&#8221; for the Windows Update
+137 : Optimizing CSS for IE
+138 : Explaining how our software works to intern
+139 : The architecture was not scalable
+140 : When the client validates the end of the project with no reserve
+141 : When a junior dev dares to answer to the manager
+142 : First time reading the project specifications
+143 : When the deadline is approaching and QA still finds a bunch of bugs
+144 : Fixing a bug without debugger
+145 : Sending a big commit before the intern&#8217;s one
+146 : When the boss gives us our friday
+147 : Looking the server logs after a huge failure
+148 : Using a new framework for the first time
+149 : QA trying to find some occupation during our extended sprint
+150 : When the manager thinks he still knows how to code
+151 : Forkbomb
+152 : Intern&#8217;s first commit
+153 : Try-catch
+154 : "What do you mean? You restarted the job too?"
+155 : Failing to catch an exception
+156 : When a big project is not finished and the client comes next week
+157 : When QA takes back a ticket because of a &#8216;misunderstanding&#8217;
+158 : When I use a quick workaround
+159 : Preparing myself to leave for lunch and a client calls me for a &#8220;quick question&#8221;
+160 : When my function returns exactly the expected result
+161 : Trying to fix a bug on monday morning&#8230;
+162 : Boss looking for volunteers for a weekend release
+163 : Friday, 5pm
+164 : "I have a great VB project for you!"
+165 : Merging the intern&#8217;s code with our master branch
+166 : When a senior developer approves my code
+The thread 0x10f0 has exited with code 259 (0x103).
+167 : Compiling&#8230;
+168 : "We have a big contract for a VB6 project and we thought you would be perfect for this job!"
+169 : When we finally defeat a bug
+170 : When I try an example from Stackoverflow
+171 : When a web developer understands that Microsoft Edge is just IE&rsquo;s reincarnation
+172 : After a whole day spent on the phone with our technical support
+173 : When my code works on page refresh
+174 : When my colleagues ask if I really corrected that huge bug
+175 : Every time when the intern asks for admin access on production server
+176 : Forgot LIMIT in my SQL request
+177 : Recompiling a Java app after 6 months spent on PHP
+178 : When two senior developers communicate
+179 : "You should try coffeescript!"
+180 : Unexpected output
+181 : My face before a &#8220;sudo rm -rf&#8221;
+182 : When the manager is looking for me on Friday night
+183 : When two clients want their release on friday
+184 : Finishing a project on time
+185 : Repeating something to the intern for the 5th time
+186 : "Sure, I can refactor it."
+187 : When they ask me to work on a VB6 project
+188 : Parameters&#8217; order in PHP&#8217;s array() functions
+189 : When I accidentally close Eclipse and now I need to reimport and build the project again
+190 : When I have to go through all the terms of use to install a soft
+191 : When the PM starts demoing the site to an executive in the middle of a development day
+192 : Switching from Eclipse to Android Studio
+193 : Applying a hotfix in the middle of a demo
+194 : When an assembler consultant comes in my company
+195 : When someone asks me if it was hard to code
+196 : Trying to deploy an unmerged file
+197 : When the first Google&#8217;s result is from W3Schools
+198 : When I use a VPN service for the first time
+199 : QA giving their steps to reproduce a bug
+200 : Deadline approaching faster than expected
+201 : When I realize that I let the client in the copy of a mail intended to my colleagues
+202 : Friday, 5pm
+203 : Senior developer debugging the intern&#8217;s code
+204 : When the demo goes wrong in front of our clients
+205 : When the client wants to change a feature. Again.
+206 : When the intern tries to code like a senior developer
+207 : "Do you think this refactoring necessary? It works well as it is."
+208 : Sales guy introducing me to the client
+209 : When I am waiting for an answer from our technical support
+The thread 0x26f4 has exited with code 259 (0x103).
+210 : When I accept to code in PHP
+211 : When I have no other choice than to unplug the server to stop it
+212 : Intern trying to use my code for his project
+213 : Leaving the office when none of my code works
+214 : Watching the SQL team asking to the project manager another month to finish the project
+215 : When I want to make a little change right before a demo
+216 : When the client asks me to edit his website&#8217;s design
+217 : When they ask me to edit some Fortran code
+218 : When the tester rejects my fix
+219 : Fixing two bugs with a single change
+220 : When I learn that I have to mount a dynamic website on a 17 year-old server
+221 : When I am the only one who changes of project
+222 : When a ticket pops up on Friday night
+223 : When I am no longer an intern and I see a joke about interns on thecodinglove
+224 : One-line bugfix
+225 : When I have to write awful code for a weird API.
+A first chance exception of type 'System.Net.WebException' occurred in System.dll
+226 : When they ask me to work with a language I do not fully master
+227 : Investigating a bug only to find huge underlying issues
+228 : Testing border-radius with IE8
+229 : When I use an undocumented framework
+230 : Listening the client telling me what he wants in his app
+231 : When I take a break after an entire day spent coding
+232 : Windows&#8217; firewall
+233 : When half of the error messages disappear all at once
+234 : When I am the only available developer in the office
+235 : When the client tries an untested feature
+236 : When I modify some code while my unit tests are still running
+237 : The dev team when a nasty bug report arrives
+238 : Friday, 5pm
+239 : Going to an app review meeting when it no longer builds
+240 : Intern asking me to review his notes
+241 : Saying bye after a 3 day coding marathon
+242 : How to respond about on-going outages
+243 : When I hear the boss talking about a raise
+244 : The intern when even senior developers can&#8217;t solve his critical bug
+245 : git push &#8212;force
+246 : When my boss offers me a free afternoon with &#8220;no strings attached&#8221;
+247 : First review of intern&#8217;s code
+248 : When I am about to make ugly code and learn that it will be entirely checked
+249 : When the sales guy tells us how much he sold new features to the client
+250 : Fixing &#8220;minor&#8221; bugs
+251 : When I get the admin&#8217;s password
+252 : When I have to handle two bugs at the same time
+The thread 0x1ba8 has exited with code 259 (0x103).
+253 : Manager walking through the open space on friday evening
+254 : When someone comes to get me during my break
+255 : Receiving infos about a f*ckd up project that will be developed during my holidays
+256 : Servers&#8217; admin when the dev team wants a root access
+257 : Sales guy trying to talk technical with us
+258 : Coding before my first coffee of the day
+259 : Whenever I check the logs of our app
+260 : Pair programming
+261 : When my code works and no one understands why
+262 : When my boss says that my code has been replaced by the intern&#8217;s one
+263 : After a whole night spent coding
+264 : Applying a quickfix on a full charge server
+265 : Refactoring the 30 year old Fortran code of my PhD supervisor
+266 : When I run for the first time my big SQL query and it doesn&rsquo;t throw errors
+267 : When they tell me that I have to rewrite the intern&#8217;s program
+268 : Working on Friday night
+269 : When the customer thinks the mockup is the finished product
+270 : Refactoring someone else&#8217;s code
+271 : Reviewing intern&#8217;s code
+272 : Playing with the CSS when the front end developer comes with new visuals
+273 : When the sales guy tries to show an unfinished feature
+274 : Build&#8230;&#8230;&#8230;.. SUCCEEDED
+275 : The place where I mentally go when I have to deal with this legacy code
+276 : When I prepare myself to debug a 10-year-old code
+277 : Unexpected output
+278 : Bug reports after QA gets the new version
+279 : When I try to copy a line from the console during execution
+280 : Let&#8217;s drop this useless database
+281 : When I get a mission everyone wanted to have
+282 : When I am the first one in the open space on Monday morning
+283 : Right after a messed up commit on a friday evening
+284 : When there are still 30 tickets awaiting right before going on holidays
+285 : When the intern wants to show his skills to a senior developer
+286 : When I hear that we will get new gadgets soon
+287 : When the server crashes during my lunch break
+288 : Intern&#8217;s first commit
+289 : New guy trying to use our tools without knowing how they work
+290 : Demo with the client
+291 : Testing the intern&#8217;s code
+292 : When switching from PHP to ASP.NET
+293 : Incoming deadline
+294 : When I tell a developer&#8217;s joke to a non-developers audience
+295 : When I have no choice but to work directly on the production server
+296 : When I hear the sales guy talking technical with our client
+The thread 0x1274 has exited with code 259 (0x103).
+297 : Realizing that the intern has left compile errors before leaving on week end
+298 : When my post gets published on thecodinglove, but my friends don&#8217;t share it
+299 : When people ask me why I use Sublime Text editor
+300 : "Who broke the database&#160;?"
+301 : When my rights are not as high as I expected
+302 : When in a demo, my module is the only one which fails
+303 : Classic development cycle.
+304 : "Who wrote this shit?!"
+The thread 0x27a8 has exited with code 259 (0x103).
+305 : Ctrl-Z
+306 : Being in a meeting after 2 nights spent coding
+307 : Client talking to me about his app to migrate
+308 : When they tell me my app has to be IE7-friendly
+309 : Doing a rollback right after updating to production
+310 : How I feel when fixing bugs during a all day
+311 : Client blowing in the open space without warning
+312 : System admins when I submit a ticket on monday morning
+313 : Customer asking for help on friday night
+314 : When a bug I found leads to an argument between 4 companies
+315 : Watching the other team&#8217;s project crash
+316 : When they ask me to document all of my modifications
+317 : How a designer reacts when a back-end developer tries to make the UI
+318 : When the project manager wants to assign my cool project to another developer
+319 : Coding smoothly when a wild problem appears
+320 : When the project management team approaches with &#8220;small changes&#8221;
+321 : When the client pretends to test the back office
+322 : When I hear that Microsoft is killing off the Internet Explorer brand
+323 : When they tell me I have to use Wordpress to develop the website
+324 : Senior developer at work
+325 : Writing another quickfix
+326 : When the boss looks at me during his presentation
+327 : Unexpected output
+328 : Unexpected output
+329 : Client discovering a great feature
+330 : Launching my test after writing numerous lines of code
+331 : Manager: &#8220;Can I take a minute of your time&#8221;?
+332 : When I try to counteract the client&#8217;s arguments
+333 : Finishing a project
+334 : Intern&#8217;s demo
+335 : Our server team when a critical error occurs
+336 : When I notice that I forgot to increment the var in my loop
+337 : When PM asks me to work during the weekend
+338 : Showing some thecodinglove posts to non developers
+339 : When I think it will compile at the first time
+340 : When someone asks me if I know how to fix a computer
+The thread 0x1c48 has exited with code 259 (0x103).
+341 : When I have to install a bunch of Python libraries
+342 : Making CSS like a boss
+343 : Perfecting CSS when the client demands it to be identical across all browsers and versions
+344 : Team looking for the responsible of the crash
+345 : Finally finding the solution for a bug
+346 : Do you really think this code needs refactoring? It works good&#8230;
+347 : Coming back home after a nightly release
+348 : When a colleague sends me a link to superlogout.com
+349 : If only all nasty bugs looked like this &#8230;
+350 : When my little hotfix causes a major bug
+351 : Realizing someone saw me bitching on the intern&#8217;s code
+352 : "Can you take a look please? I am trying to fix this issue for hours"
+353 : Coding in VBA
+354 : When a pretty girl walks through the office
+355 : When nobody believed that my workaround could actually work and I prove it
+356 : Finishing a project right on time after working on it during the whole weekend
+357 : When my boss tries to get my attention on monday morning
+358 : "Just deploy it, it&#8217;s friday!"
+359 : When I accidentally send my demo to the wrong client
+360 : When all unit tests succeed except the last one
+361 : My colleague and I after a successful release
+362 : Senior developers in action
+363 : Loading a bad coded website
+364 : When my manager surprises me on Facebook
+365 : When people tell me PHP is not a real programming language
+366 : When the new intern wants to tinker with the production servers
+367 : Application fails during presentation
+368 : When the build breaks during lunch
+369 : When I check the logs of our production server
+370 : Succesfully replacing old base library from production
+371 : When my boss says during a meeting: &#8220;It&#8217;s easy to do that.&#8221;
+372 : When I see the client open the website with IE
+373 : Boss congratulating the team and the intern
+374 : When I finally get a second monitor
+375 : My team working on a doomed project
+376 : The production server receiving a new and completely untested feature
+377 : When they tell me that there&#8217;s still an encoding problem
+378 : Leaving the office on friday night
+379 : Realizing that the bugfix is going to require a total overhaul of legacy code
+380 : When my boss says that the client wants to talk with me
+381 : When I succeed in fixing a bug without knowing how I did it
+The thread 0x25c4 has exited with code 259 (0x103).
+382 : Dealing with the unfinished project left by another developer
+383 : When that nasty bug comes back again
+384 : When I am assigned on a PHP project
+385 : Waiting for the signal to make my commit
+386 : Incoming mail from a client 5min before leaving
+387 : When as a consultant, I see all the company going to a seminar
+388 : Unexpected output
+389 : When my manager wants to talk to me about a very old project
+390 : When my colleague proposes me a coffee break in the middle of a debug session
+391 : Handling a full outer join as a SQL beginner
+392 : When I realize that a bug is not that simple
+393 : When I am on call and the phone rings
+A first chance exception of type 'System.Net.WebException' occurred in System.dll
+394 : When I decide to save a lost project and a coworker follows my track
+395 : Developers&#8217; week&#8230;
+396 : When I decide to try a new framework in the middle of a project
+397 : Mondays &#8230;
+398 : Colleague asking for my help while he let me down on friday night
+399 : When the boss is looking for someone to be on call for the weekend
+400 : When the boss catches me on facebook
+401 : Meeting the client
+402 : Clients writing bug reports
+403 : When the client wants to add a little feature
+404 : When they ask me if I have already developed with WinDev
+405 : Giving my project to senior developers when I leave my job
+406 : Developing without TDD
+407 : When QA finds a bug in my bulletproof code
+408 : When my code works on all platforms
+409 : When the intern raises his hand at the end of a long meeting
+410 : Postponing the deadline
+411 : When I see a 2000 lines long method in legacy code
+412 : When an angry client is calling
+413 : When they tell me to rewrite the intern&#8217;s code
+414 : Updating CMS
+415 : Sales guy trying to use our developer&#8217;s language
+416 : When a client asks me to fix something that is clearly not a bug for the third time
+417 : Coming back from holidays
+418 : When my boss is looking for someone to stay late on friday
+419 : When I win bounties on StackOverflow
+420 : When my colleages tell me to do not refactor the whole app
+421 : When a critical code refactoring passes the tests with success on first try
+422 : Intern submitting his first bug fix
+423 : When I try to refactor old code, only to realize why it has stayed that way for so long now
+424 : Improving GUI appearance of a colleague&#8217;s program
+The thread 0x1c84 has exited with code 259 (0x103).
+425 : When they ask me to keep an eye on the intern
+426 : When this awesome project on which I was about to work is stolen by a coworker
+427 : When I try to find a good name for my next project
+428 : When I read and refactor code of another developer
+429 : When I have a great debug idea
+430 : When my project manager asks for just a second of my time
+431 : Client using the application
+432 : How the app runs after a pair programming session
+433 : Testing my website with IE8
+434 : When I start to understand the MVC pattern on my new project
+435 : Senior developer&#8217;s release
+436 : When the final user tests the app
+437 : Opening Jenkins on monday morning
+438 : First day in the office after delivering a project
+439 : When a backend php developer must deal with js
+440 : When the first feature I ever wrote as an intern got submitted to the QA team
+441 : Finally understanding how a framework works
+442 : Building my first isomorphic javascript application
+443 : Coding after lunch
+444 : When I cancel the deployment right on time
+445 : Moving a project&#8217;s folder and forgetting to copy its DLLs
+446 : Two senior developers in pair programming
+447 : After hours of coding without testing and it works as expected on first try
+448 : Discovering features of a new framework
+449 : Intern asking me to check if his code is safe for production
+450 : When I force tasks to close with Windows task manager
+451 : When the intern asks for admin privileges on the server
+452 : Removing a new bug from a working project
+453 : Pushing to production when suddendly, a wild bug appears
+454 : Explaining basic concepts to the intern
+455 : When my boss oversees me during extra hours near the deadline
+456 : When I find a hard-coded string during code review
+457 : When the client congratulates the sales guy for the quick release
+458 : After the client told us he absolutely wants a release on friday night
+459 : Database collapse
+460 : Working on old legacy code when an intern commits the first change
+461 : When I finally solve a nasty bug
+462 : Senior developer
+463 : "OK, let&#8217;s continue this meeting after lunch"
+464 : When a coworker wants to help me on a project
+465 : When the app crashes during a presentation
+466 : When someone disturbs me when writing a complicated algorithm
+467 : Seeing the state of the project after the intern left us
+468 : When the junior developer tries to understand the client&#8217;s request
+The thread 0x1f24 has exited with code 259 (0x103).
+469 : When an automated task has to be run manually
+470 : When I am asked to go to a conference in Vegas
+471 : When an important client touches my screen in a presentation
+472 : Refactoring like a boss
+473 : When my manager gives me some of his tasks
+474 : Trying to learn how to use a new framework
+475 : Leaving the meeting room after a presentation ended pretty bad
+476 : When we make a quick fix on production server
+477 : How I develop it, how the user uses it
+478 : Completing a project before holidays
+479 : When QA tests the wrong feature
+480 : Trying to figure out what to do during your first week at a new job
+481 : When a code fusion works perfectly
+482 : When a &#8220;fixed&#8221; bug reappears
+483 : Coding in front of other persons
+484 : When the sales guys announce what they have sold
+485 : When we go see the manager to give him some explanations
+486 : Senior developer fixing an issue
+487 : When as an intern I fix a senior&#8217;s bug that he couldn&#8217;t solve
+488 : When I remove my coworker&#8217;s admin access
+489 : Client asking more free features to the sales guy in front of me
+490 : Check on the intern during their first project
+491 : Trying to catch an annoying bug
+492 : Trying to fix a messy project
+493 : Hearing the boss asking a colleague to stay late for an important task
+494 : Unexpected output
+495 : When a minor change is made and I have to rewrite documentation I&#8217;ve just made
+496 : When I&#8217;m asked to work on a VB6 project
+497 : When we absolutely have to release the product
+498 : When the boss comes to my desk with an energy drink pack on friday 5pm
+499 : Testing my code
+500 : When a website with an endless scroll has links in footer
+501 : When someone archives without merging and crushes my modifications
+502 : When all dev&#8217;s computer are changed
+503 : Product specs change after 90% completion
+504 : How my boss thinks software development works&#8230;
+505 : Colleague releasing &#8220;little upgrades&#8221; in the middle of the test phase
+506 : When my boss comes with a new technology
+507 : When I learn that I have to fix a VB6 application
+508 : When the boss cancels a project ready for deployment
+509 : After announcing that I quit
+510 : When by fixing a minor bug I create a critical one
+511 : The sales guy talking about the app to the client
+512 : When I learn during a meeting that I have to maintain legacy code
+513 : When they want me to take the last client&#8217;s requests in consideration
+514 : When I add many libraries to the project
+515 : When the intern tries to impress senior developers
+516 : When I turn a bug into a feature
+517 : When my alarm rings on monday morning
+518 : When I fix this nasty bug
+519 : When I make a small change on a div
+520 : When the deadline approaches and no one thinks I can deploy on time
+521 : Making the Facebook API work on first try
+522 : When the big boss visit our office
+523 : When I realize that the intern uses vim like a pro
+524 : Senior developer showing a new technique 
+525 : When they ask me if the user manual is going to be updated
+526 : When I successfully install a new software without adding toolbars or adwares
+527 : Fixing a critical bug 5 minutes before the deployment
+528 : Hiding a bug right before a demo
+529 : Sales guy showing our test site to the client and everything goes wrong
+530 : Implementing a prank into the intern&#8217;s project, right before presentation
+531 : Pushing an untested hotfix up to production
+532 : When they tell me the site has to be IE-friendly
+533 : Seeing the new guy debugging without stack trace
+The thread 0x224 has exited with code 259 (0x103).
+534 : When I am the only one to have admin rights
+535 : Senior developers
+536 : Minutes before the release
+537 : When I have a meeting early in the morning
+538 : Friday, 5pm
+539 : When an expert programmer suggests a revolutionary programming language to refactor an old system
+540 : When the boss introduces the newly hired HR
+541 : Discovering a function which would have save me 3 hours of code
+542 : Using PHP OOP after Java
+543 : When the customer reads the manual
+544 : When I search for a bug for an hour and notice that I have misspelled paths
+545 : Taking a look at the new guy code
+546 : When I make my first Hello World
+547 : Compiling&#8230;
+548 : When a colleague goes on holidays after committing a buggy code
+549 : When the specs change after we pushed to production
+550 : When I think about how to add a new feature into an unknown framework
+551 : When I tell I&#8217;m the new intern
+552 : When coffee machines aren&#8217;t officially allowed in office
+553 : When the intern defeats the sales guy arguments during a meeting
+554 : When the team leader offers me a new task and I already hold 30% of the team&#8217;s workload
+555 : "Why refactoring? It works pretty well &#8230; somehow"
+556 : When the client sees a bug as a feature
+557 : When I try to fix a bug on monday morning
+558 : Avoiding bug reports on Friday night
+559 : Bugfixing
+560 : When I deploy without having tested locally
+561 : Seeing the specs of our new project
+562 : After a 14 hours coding session
+563 : Microsoft plans to release a new browser with Windows 10
+564 : Describing our network infrastructure
+565 : When the client always sends me the same bug ticket
+566 : My reaction when the sales guy explains requirements
+567 : When my boss wants to assign me to an old legacy project
+568 : When I have to reboot
+569 : When I end up doing the demo in front of the client when it was not planned at all
+570 : When they discuss about a user story for 20 minutes
+571 : When I fix an old legacy code that my colleagues qualified as unsolvable
+572 : When I use &#8220;git push &#8212;force&#8221; to get rid of bugs on the production server
+573 : Interns deploying the production site with no test
+574 : When my unbreakable app is submitted to the QA team
+575 : Helping the client to use his app
+576 : When I am temporary working with a VB6 team
+577 : First meeting after holidays
+578 : Friday, 5pm
+579 : Unexpected output
+580 : When the intern is modifying my code
+581 : When I restarted a server and realize a colleague had a batch running for a few hours on it
+582 : Boss entering the office when I&#8217;m about to leave
+583 : When the client asks for a major feature the day before launch
+584 : When the buggy feature suddenly works during the presentation
+585 : My client when I want to validate specs with him
+586 : When a bug keeps being reopened
+587 : Every time a new technology is announced
+588 : Looking through old code
+589 : When someone makes a commit without any change
+590 : When my parents ask me again to &#8220;repair&#8221; their computer
+591 : When my untested function flawlessly works
+592 : When after 2 hours looking for the cause of a bug someone tells me I forgot a &#8220;;&#8221;
+593 : Trying to fix a bug in legacy code
+594 : After a 15 hours intensive coding session
+595 : When the scrum master congratulates us at the end of a sprint
+596 : Monday mornings
+597 : When a manager walks nearby on Friday night
+598 : When I am the only one to be on time for a meeting
+599 : When the client sends a long, chaotic e-mail that ends with &#8220;I will call you in just a moment&#8221;
+600 : When the development team says the build doesn&#8217;t need to be tested
+601 : Testing my website render with IE8
+602 : At the end of a long night of coding
+603 : When someone tells me that abstract classes are useless
+604 : When I have to work on the intern project after his departure
+605 : Working with the same team for the fifth time
+606 : When a girl walks in the open space
+607 : Trying to spot an error in the Java stack trace
+608 : When the QA tries to break my code
+609 : When I check the intern&#8217;s code
+610 : Debugging a VB app
+611 : When I get the first mails from the customer after the release
+The thread 0x241c has exited with code 259 (0x103).
+612 : When my coworker breaks my build
+613 : When I bring the solution to a bug the team have been working on for 2 days
+614 : Programming in a new language
+615 : When my boss watches in my direction on Friday night
+616 : When the project manager accepts the new client&#8217;s request on week before the deadline
+617 : When I forget to set the breakpoint.
+618 : When I think I am about to solve a bug
+619 : When I make browsers&#8217; compatibility
+620 : git push &#8212;force
+621 : Trying to stop the project&#8217;s deployment
+622 : When I have to support the worst non-IT coworker
+623 : When a colleague comes to ask me a favor
+624 : Compiling
+625 : When I&#8217;m called for support on a VB6 project
+626 : When I mention some new technologies to the conservative CTO			
+627 : When the client asks how the project is going
+628 : When we received the client&#8217;s new suggestions
+629 : When the demo crashes during a presentation
+630 : When I work on an important task and a more important one suddenly appears
+631 : When I&#8217;m forced to use a deprecated library.
+632 : When the client demo ended up pretty well
+633 : Boss asking me to stay for a few hours on a friday night
+634 : When my boss looks for someone who can be called during the week end
+635 : When my boss sends me to a boring meeting
+636 : Watching my project explode after quitting my job.
+637 : Making small changes in an unfamiliar web framework
+638 : Backend developer working on the user interface
+639 : CSS
+640 : When a client sends us a new ticket for a bug which was supposed to be fixed
+641 : When the sales guy use a good technical word during the presentation
+642 : When I make an huge merge
+643 : Doing a successful live demo
+644 : When a non-IT coworker asks me to give him administrator rights on his machine
+The thread 0x108 has exited with code 259 (0x103).
+645 : When the client wants another change one day before the release
+646 : Receiving an exception error
+647 : Senior dev fixing intern&#8217;s bug
+648 : When a software wants to add toolbars and bookmarks during its installation
+649 : Trying to use the new version of Android Studio
+650 : Creating a bug while fixing another
+651 : After my boss proudly announces the launch date for next week
+652 : When I asked the manager to find a bug and he ends up breaking the production
+653 : 5pm on friday night
+654 : When I reach the last page on the_coding_love();
+655 : Going at the client&#8217;s office to see how users work with our solution
+656 : When I am assigned on a new project
+657 : When the client congratulates only my boss for the project I have entirely done for him
+658 : Pair programming
+659 : When a client sends me &#8220;lol&#8221; in his message
+660 : When the lead developer says my new code is &#8220;clunky&#8221;
+661 : When I submit untested code
+662 : When I forget a breakpoint
+663 : First client e-mail after release
+664 : When the best senior developer is called for an unresolvable bug
+665 : Meetings after the lunch break
+666 : My reaction when the intern explains his code
+667 : Trying to use a new framework without reading its documentation
+668 : When a colleague needs my help at 6pm
+669 : When a colleague talks about work during lunch break
+670 : Seniors and interns
+671 : Mondays&#8230; 
+672 : Friday night in the open space
+673 : When the new guy asks where is our app&#8217;s documentation
+674 : Intern committing his first bugfix
+675 : When I give up fixing a bug and my computer shuts down by himself
+676 : Continuing a presentation after a critical bug
+677 : When the intern gets access to the production environment
+678 : When I have to reinstall VS2013 after a borked update
+679 : When I block IE access to my personal website visitors
+680 : When I get a new computer
+681 : Testing in IE8 and everything looks fine
+682 : Whenever internet explorer tries to be developer friendly
+683 : Seeing someone struggle with a bug and fixing it in a few seconds
+684 : When my commit breaks the build
+685 : My lunchbreak when the deadline is close
+686 : Project -&gt; Clean -&gt; Clean all project
+687 : When the boss says he&#8217;s surprised that the same bug is coming again and again
+688 : "Hey, I think my pc is broken, could you take a look at it?"
+689 : Leaving the server after a quick fix
+The thread 0x914 has exited with code 259 (0x103).
+690 : Always the same thing.
+691 : Typical monday morning
+692 : When an urgent ticket appears on friday night
+693 : When I hear that we&#8217;ll have to release one week earlier
+694 : When everything works flawlessly
+695 : When I realize the new guy knows more than me
+696 : When I run my fixed code without saving the file before
+697 : When I see what the intern has done on my project
+698 : The client when I make a small update of his app
+699 : Trying some code found on an unkown forum
+700 : Running without compile
+701 : Doing a SQL dump of frontend servers
+702 : When I started working with vim
+703 : Using lib without reading specs
+704 : When I realize that I definitely deleted the wrong file
+705 : When the new guy wants to refactor my code
+706 : When my compilation is about to fail
+707 : When I have to go in the boss office after a angry client call
+708 : As a backend developer, this is how people react when I have to do the designer&#8217;s job
+709 : Solving bugs like a boss
+710 : When I compile my &#8220;so perfect&#8221; code
+711 : When I am about to go to work on monday morning
+712 : when I come home on friday night
+713 : When our highly motivated, freshly hired software dev starts refactoring our legacy code
+The thread 0x2210 has exited with code 259 (0x103).
+714 : When a fatal error comes out of nowhere
+715 : When it looks like I will be the only developer in a business meeting
+716 : "Those who want to drop IE support, raise your hand."
+717 : Starting a new project with no specs or limitations
+718 : When I finally get the server&#8217;s access
+719 : Counting on a colleague to help me with a vicious bug
+720 : When we reach the deadline on a project that we&#8217;ve been working correctly from the beginning
+721 : When the user tries the application for the first time 
+722 : When I accidentally show the wrong feature during a demo
+723 : When I try to edit some lines of the website&#8217;s CSS
+724 : When I fix two bugs with a single line of code
+725 : Bugs reports
+726 : When I have to work on assembler
+727 : New guy asking us the root password
+728 : Clients&#8230;
+729 : Intern using senior&#8217;s library
+730 : When my own bugfix causes an error
+731 : When all my tests succeed except the last one
+732 : When the clock hits 5pm on friday 
+733 : When a senior developer prevents the intern from deploying the code in production.
+734 : When my boss asks how the really important project is going&hellip;
+735 : When the boss comes in to ask who is available on sunday
+736 : when the project manager asks if we fixed all reported bugs before the release
+737 : opening BIOS
+738 : when my code causes an issue in production
+739 : Finishing my sprint 2 days early
+740 : switching frameworks just because a feature sounded cool
+741 : WYSIWYG
+742 : PHP Parse error: parse error, expecting &lsquo;;&rsquo; on line 3
+743 : When I open our bug tracker in the morning
+744 : when I allow the client to test the application for the first time
+745 : bugfixing &#8230;
+746 : Arguing against a senior developer
+747 : Git-push when there are still conflicts
+748 : when I discreetly fix an unseen bug on production
+749 : As an intern, this is how I feel around the dev team
+750 : When I&#8217;m about to read the browser support&#8217;s section in specs
+751 : Doing Ctrl+Q instead of Ctrl+S in a stupid IDE
+752 : Friday at 6pm
+753 : Successful deployment
+754 : Unexpected output
+755 : Surprising a coworker on my computer
+The thread 0x2298 has exited with code 259 (0x103).
+756 : When I get the go ahead to throw out old legacy code.
+757 : When a colleague blames me for a bug and then git traces leads back to him
+758 : When I figure out that a built-in function can replace my 100 lines function I just wrote
+759 : When the app of one of our biggest clients is down during lunch time
+760 : Hearing from ex-collegues about the project you left behind at your old job
+761 : Trying to reproduce a bug after noticing it
+762 : Intern&#8217;s &#8220;bugfix&#8221;
+763 : When I am called to work on a very old project
+764 : Realizing I&#8217;m about to commit code with nasty debug alerts
+765 : When I can&#8217;t figure out why my code isn&#8217;t working
+766 : joomla or wordpress?
+767 : When I have to explain all my code - again - to the same coworker
+768 : when thecodinglove.com/rss does&#8217;t contain images
+769 : Fixing bugs in a big project
+770 : Handling exceptions like a pro
+771 : When the boss only congratulates the manager after the new release
+772 : When a co-worker asks for help on friday night
+773 : when we review the intern&rsquo;s first pull request
+774 : Going at a client site to see how the users work with the app
+775 : "Alright, Who wrote this code?"
+776 : When a &#8220;fixed&#8221; bug appears again
+777 : When my manager assigns me a new task with at least 7 unknown words in the description
+778 : When a colleague hands me his keyboard to help him fix a bug
+779 : When someone is about to click on a buggy button during the presentation
+780 : Intern&#8217;s first commit
+781 : When the client has more revisions than anticipated on my mockup 
+782 : senior developers making pair programming
+783 : When someone has to work on a very old project
+784 : When I quickly fix a bug right after the deployment
+785 : When I have to demo an unfinished project
+786 : When the new guy has to handle an outage
+787 : When all clients open tickets in our bug tracker
+788 : When I help an intern on his first task
+789 : When I am out of resources
+790 : When the boss promises me an extra bonus if my job is done before deadline
+791 : Every monday morning
+792 : When I receive a server crash alert notification on friday night
+793 : When my manager asks if I was the one that put that easter egg in our newly released product
+The thread 0x2030 has exited with code 259 (0x103).
+794 : When I accidentally click &#8220;rebuild&#8221; on a big project
+795 : When the sales guy says he&#8217;s ready to do technical talks
+796 : when a small bug causes a fatal exception error
+797 : when I&#8217;m reading specs of a huge project
+798 : when I change a bug into a feature
+799 : Intern taking notes
+800 : "Don&#8217;t worry, it will be an easy bugfix!"
+801 : when I hear that the coffee machine is broken
+802 : when the deadline approaches more and more
+803 : Fixing a critical bug in a few seconds
+804 : When an intern from another team wants my help
+805 : when the sales guy promises something impossible during a meeting
+806 : Meeting the boss after a successful launch
+807 : Reviewing some obscure code
+808 : When I am the only one who have the ODBC access to production
+809 : When Android Studio tells me I don&#8217;t have enough memory for my Virtual Device
+810 : When the intern&#8217;s code pushing breaks everything
+811 : Monday morning
+812 : When servers are crashing on friday night
+813 : A senior developer and a junior one during the deployment day
+The thread 0x1824 has exited with code 259 (0x103).
+814 : Trying to repair the server
+815 : When the sales guy wants to know if the release went well
+816 : When I prove that the QA team was wrong about bugs reports in my app
+817 : Developer vs designer
+818 : Programming with no specs
+819 : Hoping a colleague will help me with a nasty bug
+820 : When after the umpteenth interview I finally find a developer who agrees to join the company
+821 : Catching errors in PHP
+822 : When the two development teams have to merge their code
+823 : Arriving on a very old and abandonned project
+824 : When a coworker asks me to explain my code after my two weeks holidays
+825 : First try, no bugs.
+826 : Bugfixing a poorly written application
+827 : When the boss tells us there will be no end of year bonus
+828 : Explaining an outage
+829 : "You remembered to shut the server down before updating, right?"
+830 : The intern&#8217;s first day as a bug fixer
+831 : When the client tries to find some glitch in our app
+832 : Leaving office on friday night
+833 : When they want to assign me a task on friday afternoon
+834 : Going into the boss office after a huge crisis
+835 : when a senior developer comes to help a junior
+836 : After coding all night long
+837 : "Let me fix this little bug"
+838 : Showing off my coding skills with the intern
+839 : An unexpected bug appears during a presentation
+840 : Hard coding during the night
+841 : When they want me to use a design pattern when a simple script can do it
+842 : When the new guy says he&#8217;s going to directly update the production environment
+The thread 0x1f24 has exited with code 259 (0x103).
+843 : Just when I thought this bug was fixed
+844 : Trying to work with LESS
+845 : when someone commits a file with the wrong encoding
+846 : with old developers
+847 : Every week the same thing
+848 : Following an advice from Yahoo Answers
+849 : Realizing what the boss is asking us to do is not a joke
+850 : debugging on monday
+851 : when the user comes right after making a huge change in production
+852 : Friday night
+853 : When my code doesn&#8217;t work before I leave on friday
+854 : When IE ask me to be the default browser
+855 : Bugfixing
+856 : When my project loses his funding
+857 : When my boss finally accepts my holidays
+858 : When my GIF ends up on thecodinglove
+859 : Doing everything as the client asked
+860 : Tyring to keep some gadgets during a meeting
+861 : Seeing daylight after coding all night
+862 : When I&#8217;m working under too much pressure
+863 : When my app comes back from the QA with a ton of spotted bugs
+864 : When my boss allows me to use new tools which have been forbidden for a while
+865 : When the ticket I received was in fact a user error 
+866 : "You are the new intern right? Let me present you to your colleagues"
+867 : Forgot a sleep in my code
+868 : When I have to understand some old legacy code
+869 : "I think this code needs to be refactored &#8230;"
+870 : When I learn a great feature of a programming language
+871 : Explaining what is flat design to the client
+872 : When I am asked to stay at 4:58pm on friday night
+873 : When the sales guy gives us a technical speech
+874 : Sorting the folders of an old unused hard disk
+875 : Reading my notes after the meeting about the new client expectations
+876 : When I restart the servers &#8230;
+877 : When I see all the servers crashing one by one
+The thread 0x2728 has exited with code 259 (0x103).
+878 : when I hear marketing using technical terms
+879 : when my code compiles on the first try
+880 : when my colleague and I are working on the same code
+881 : when we find out who broke the coffee machine
+882 : When the intern uses the console in front of clients
+883 : when a colleague makes some updates on my code
+884 : Ending a 1-week task in only one day
+885 : When the feature on which I&#8217;m working on is removed from specs
+886 : senior developer
+887 : When I am in charge of writing the documentation
+888 : When I exit a program which is not responding on Windows
+889 : When a function I expected to fail turns out to be good
+890 : When a colleague starts to talk about our project during the lunch break
+891 : First day of work
+892 : When I leave the office on friday night
+893 : When the sales guy sends us his mockups
+894 : when I see a furious client during my lunch break
+895 : deployment
+896 : when managers want to change my developments tools
+897 : when my manager presents me an awesome project &#8230; which is assigned to one of my colleague
+898 : when a colleague claims that the new version of IE is better
+899 : when I fix three bugs in a row
+900 : when a pretty girl joins the team
+901 : When I ipconfig what I wanted to ping
+902 : "You are the new intern, right? Wait a minute, I&#8217;m preparing your PC"
+903 : When I think the open source alternative is better
+904 : Demo
+905 : My face when Windows crashes for unknown reasons
+906 : When the intern says unit tests are a waste of time
+907 : When program runs for a few seconds but a fatal error appears
+908 : When I misclick the taskbar and Photoshop starts to load
+The thread 0x480 has exited with code 259 (0x103).
+909 : When I use a new library without reading the documentation
+910 : When the client explains the specifications
+911 : When I am looking at my old project
+912 : when I have to finish a project before the week end
+913 : discovering what was sold to the client
+914 : when the client reboots his server while I&#8217;m working on it
+915 : when then manager asks questions about the project the day before everything goes online
+916 : when the browser asks if I want to close all tabs
+917 : when the new intern starts refactoring code
+918 : when I try to understand the meaning of an Oracle error message
+919 : When I do a minor bugfix in a huge javascript application
+920 : Endless loop
+921 : When the client asks for IE6 support
+922 : When I try to communicate with marketing girls
+923 : When I work with internet explorer&#8217;s development tools
+924 : Senior&#8217;s reaction for incoming code refactor
+925 : After spending hours on a bug still unresolved
+926 : When I am looking for documentations in a legacy project
+927 : During a coding rush
+928 : When I am about to criticize my boss and realize that he is behind me
+929 : When the outsourced project does not meet expectations
+930 : Windows&#8217; firewall
+931 : When I start a new project right after my holidays
+932 : "Who can stay tonight to fix this bug?"
+933 : When the intern tries to code as a senior dev
+934 : Forgot the &#8216;break&#8217; in my loop
+935 : My solution to algorithm questions during an interview
+936 : "Guys, the internet signal is back!"
+937 : When I am left 5 minutes to demonstrate all the product&#8217;s features
+938 : Handling code exceptions like a boss
+939 : When the boss introduces a new female coworker
+940 : When Windows decides to reboot while I am working on something really important
+941 : When unexpected error flags
+942 : When a shitty workaround crashes during our presentation
+943 : Fixing a bug in production
+944 : SharePoint&#8217;s reaction to approximately everything
+945 : When the new guy applied directly his modifications in production
+The thread 0x1fe0 has exited with code 259 (0x103).
+946 : When I see the code of the intern for the first time
+947 : Trying to reproduce a bug
+948 : Client giving us his feedback on his new project
+949 : Monday afternoon
+950 : When someone calls me during my coffee break
+951 : Monday morning, first week meeting
+952 : when someone is looking for me just when I am about to leave on friday
+953 : just when I think I have solved a haunting bug
+954 : when a colleague is on thecodinglove during a boring training course
+955 : how senior project managers handle complaints from customers
+956 : when a friend tells me a joke when I am with my girlfriend
+957 : when the boss is angry at us
+958 : when bad reviews keep going on for my app
+959 :  reviewing code I wrote last year
+960 : while QA is talking
+961 : intern discovering uncaught expressions
+962 : debugging in production
+963 : when the product launch does not work as expected
+964 : when a bug becomes a feature
+965 : looking to my old undocumented code
+966 : when I accidentally truncate a table in the production database
+967 : when I open my editor on morning
+968 : just when I thought I fixed something
+969 : when I actually remember to wrap my code around with a try-catch block
+970 : looking at comments in some legacy code
+971 : "hey! you&#8217;re the IT guy, right?"
+972 : when I am in charge of the music selection in the open space
+973 : when the server is full and I try to send new files
+974 : when the boss sneaks up on you
+975 : hearing complaints about code on which I&#8217;ve been sweating for days
+976 : when code works and I don&#8217;t know why
+977 : trying to understand a new framework
+978 : when I realize that the project is IE focused
+979 : when I check  the intern&#8217;s code
+980 : fixing multiple bugs in one commit
+The thread 0x1abc has exited with code 259 (0x103).
+981 : unexpected output
+982 : when I install SAP
+983 : discovering that the project deadline has been postponed
+984 : opening my mail box when I am back from holidays
+985 : when my manager spots me on Facebook
+986 : when the deadline is close
+987 : when the intern thinks he can handle a task
+988 : when I&#8217;m searching for the root password
+989 : when I try to plug in a USB and flip it more than two times
+990 : when my new search in google has every link as visited
+991 : monday morning
+992 : when someone reports a bug during the deployment
+993 : when a colleague interrupts me during a hard bugfix session
+994 : when I am late and walk in front of the boss office
+995 : when something I&#8217;ve done a million times before suddenly doesn&#8217;t work
+996 : when I open the sources of Prestashop
+997 : thinking about the remaining bugs during my lunch break
+998 : when my app goes in beta and the first bug reports are coming
+999 : when the code is clean and well indented
+1000 : my face when I read the specifications of a huge project
+1001 : discovering the client&#8217;s requests
+1002 : when I prevent a crash during a public presentation
+1003 : when a colleague disturbs me for a stupid issue
+1004 : when the product owner starts to talk about some new features
+1005 : when the boss tells me to apply a modification directly in production
+1006 : when I compile a whole new big part of code for the first time without even a warning
+1007 : when I let the intern alone the first day on a big project
+1008 : deployment.
+1009 : coming back to work after 2 weeks of holidays
+1010 : when I see the Drupal core for the first time
+The thread 0x23dc has exited with code 259 (0x103).
+1011 : when my try catch doesn&#8217;t work
+1012 : when the boss is not around on friday night
+1013 : "guys, the internet signal is back"
+1014 : trying to hide a bug before the final delivery
+1015 : when I come in my office and my phone is already ringing
+1016 : when I am following the sales guy presentation
+1017 : preparing to rewrite an historical piece of code
+1018 : my first time in the server room
+1019 : when the boss opens IE to show us something
+1020 : when the client asks me if I solved his problem
+1021 : showing the current dev version
+1022 : when I&#8217;ve mastered the keyboard shortcuts in my editor
+1023 : when the boss tells me to attend an eight hours meeting with the client
+1024 : when I forgot and ending condition in my while loop
+1025 : when the client tells us he wants a website &#8220;similar to Facebook&#8221;
+1026 : unexpected output
+1027 : when I get a &#8220;Non-ASCII character&#8221;-Error in python
+1028 : when the problem is worse after my bugfix
+1029 : realizing I forgot a bug and I can&#8217;t stop my commit
+1030 : when I give a doomed project to my coworker
+1031 : when my app starts to compile but finally freezes
+1032 : leaving the office before everyone else
+1033 : looking over the intern&#8217;s first commit
+1034 : when I&#8217;m allowed to refactor legacy code
+1035 : when I find a nasty bug in old legacy code
+1036 : when I&#8217;m randomly called on in a meeting to explain code I never wrote
+1037 : removing someone&#8217;s easter egg
+1038 : when the company&#8217;s network crashes
+1039 : when the app won&#8217;t stop
+1040 : when the sales guy announces the real cost to the client
+1041 : when a senior developer comes to solve a problem
+1042 : fixing a bug right before the deadline
+1043 : when getting a first look at the project requirements
+1044 : lead developer reverts my refactor
+1045 : when I delete our client&#8217;s old website
+The thread 0x24a8 has exited with code 259 (0x103).
+1046 : when everything works as expected
+1047 : when the new guy asks us if we have access to Facebook
+1048 : when I had meetings all day long
+1049 : when the intern wants to touch my code
+1050 : bugfixing.
+1051 : when looking for a command via &#8216;man&#8217;
+1052 : leaving the office at the end of the week
+1053 : when I query a table of 17,000 records without a WHERE clause
+1054 : when a huge SQL query ends up working fine at first launch
+1055 : when folks ask me what my holidays plans are
+1056 : running the demo while the sales guy&#8217;s doing the talk
+1057 : when I can&#8217;t remember the password of the VM which took me 3 days to set up
+1058 : when I add something to my code and unrelated stuff stops working
+1059 : hot-fixing live environment
+1060 : when I get home after a coding rush
+1061 : when the server has been hacked and all data is completely lost
+1062 : when my break is not in the right place
+1063 : when my code breaks miserably
+1064 : what really happens during a hackathon
+1065 : when I try to understand the intern&#8217;s files structure
+1066 : when I&#8217;m assigned to a nasty project
+1067 : when I try to make our competitor&#8217;s app crash
+1068 : listening on how the client uses our application
+1069 : when I commit &amp;&amp; push right after someone has committed
+1070 : when the commercial begins to use technical terms
+1071 : when I try to argue with a senior programmer 
+1072 : when I see a colleague optimizing his website for IE
+1073 : managers when I am explaining why the project is late
+1074 : when the boss leaves the office earlier on friday
+1075 : when the lib I use is not included in my project
+1076 : when the intern tries to avoid the company&#8217;s firewall
+1077 : realizing I am about to drop the production database
+1078 : when the client comes with a major bug report
+1079 : the team, right before a big application update
+1080 : when the boss is on holidays
+1081 : when I send an email to the wrong person
+1082 : when I don&#8217;t have any time left for the tests
+1083 : inspecting legacy code
+The thread 0x25c0 has exited with code 259 (0x103).
+1084 : when the intern discovers MVC
+1085 : when I try to close popups on a tablet
+1086 : realizing the boss is right behind me when I am on Facebook
+1087 : coming back after a week of holidays
+1088 : when my girlfriend&#8217;s calling me to go to bed
+1089 : when the project has no more budget
+1090 : when my function does exactly what I want
+1091 : when I tell a developer&#8217;s joke to the pretty HR
+1092 : when someone asks me a &#8220;quick favor&#8221; on friday night
+1093 : when the manager is looking for someone to code in VBScript
+1094 : when the network falls down in the middle of the afternoon
+1095 : when the client asks me to stop my tests so he could finally use his app
+1096 : coming back home after a sprint
+1097 : when I put all my trust in the new guy for his first deployment in production
+1098 : when I&#8217;m done with the development of a huge feature
+1099 : when I realize that my Google searches all begin with &#8220;SELECT *&#8221;
+1100 : when I am sure that my ninja commit will not cause regressions
+1101 : when the project manager asks how I fixed that critical bug
+1102 : Too bad for Brazil!
+1103 : *computer freezes*
+1104 : senior developer
+1105 : when the intern misuses our library
+1106 : when I fix a nasty bug
+1107 : when the intern fixes his first bug
+1108 : when I try to do a small refactor without writing tests
+1109 : leaving the office after a successful deployment
+1110 : when I go to bed after a whole night spent coding
+1111 : when I solve an annoying bug
+1112 : when I edit some legacy code
+1113 : when an important client asks for a meeting at 4pm on friday
+The thread 0x1710 has exited with code 259 (0x103).
+1114 : when I am spelling the support&#8217;s phone number
+1115 : when the marketing guy makes a joke
+1116 : Successfull bugfix on the prod server
+1117 : when the client says&#160;: &#8220;That&#8217;s not what I asked.&#8221;
+1118 : when my boss tries to find a bug fixer right before holidays
+1119 : when I help an intern
+1120 : when my refactor works
+1121 : when I have to understand uncommented code
+1122 : when I hear my favorite song in my headphones
+1123 : when I&#8217;m chosen to fix the bug in the legacy code 
+1124 : monday morning, 7:00 am
+1125 : when my computer makes several updates right before leaving on friday night
+1126 : when the client wants compatibility with IE7
+1127 : when the client congratulates my boss for the project I have done
+1128 : when Q.A. cannot break my app
+1129 : when I realize that the fields&#8217; name in the table are col1, col2, col3
+1130 : "did you even test this?"
+1131 : when my colleague&#8217;s commit undoes my bug fix
+1132 : when the deadline approaches
+1133 : When a colleague excitedly talks about the great plans of our CEO
+1134 : when somebody decided to use foreign keys
+1135 : my boss when I ask a raise
+1136 : my first demo with the new client
+1137 : meetings on friday night
+1138 : when Facebook declines my app permissions for the 4th time
+1139 : when I hear someone complimenting my project
+1140 : critical bug report
+1141 : when my code finally compiles
+1142 : infinite loop
+1143 : when I&#8217;ve finished a project late at night and suddenly hear birds chirping
+The thread 0x2224 has exited with code 259 (0x103).
+1144 : how clients explain bugs
+1145 : how a junior feels during a code review
+1146 : when I make a demo with static data
+1147 : when I do an rm on a linux server
+1148 : when the client delivers new specs
+1149 : when I leave the office on friday night
+1150 : when the boss asks if I remember the app I developed a year ago
+1151 : customer&rsquo;s expectations vs. final product
+1152 : when my team and I are leaving from the office after a successful release
+1153 : testing phase
+1154 : when I have to work on legacy code which has not been developed with a framework
+1155 : when the intern introduces a new bug that no one is able to find
+1156 : when a senior developer fixes a bug
+1157 : when I have to test my own code
+1158 : when I set a breakpoint
+1159 : when I learn a new framework
+1160 : when I accept to help a colleague in trouble with a project
+1161 : when the server crashes right before the week end
+1162 : "Let me change this little line &#8230;"
+1163 : when I realize that the client uses Linux on his laptop
+1164 : when my app comes back from QA without any bugs
+1165 : a meeting with a client
+1166 : when my boss looks for someone to stay late this night
+1167 : when I am allowed to delete an old legacy code
+A first chance exception of type 'System.Net.WebException' occurred in System.dll
+1168 : "hey, the website is down."
+1169 : the intern&#8217;s first task
+1170 : coming to work on monday morning
+1171 : when I get transferred off a doomed project
+1172 : when I put a semicolon at the end of my sms
+1173 : when I test my website&#8217;s display only on Chrome
+The thread 0x2710 has exited with code 259 (0x103).
+1174 : compiling &#8230;
+1175 : when the nasty ticket I created is reassigned to me
+1176 : when caffeine is no longer effective
+1177 : when a senior developer&#8217;s help is needed
+1178 : when the client changes the specs for the umpteenth time
+1179 : when the best developer of my team decides to leave us
+1180 : unexpected output
+1181 : when I try to convince my company to change our old programming language
+1182 : when a non-developer hears one of our discussion
+1183 : when a bug appears on friday night
+1184 : when a C# and a Python developer are trying to discuss
+1185 : when my colleague says that he still uses IE
+1186 : code review
+1187 : when I can&#8217;t stop a query which is deleting all the database
+1188 : when the intern wants some help
+1189 : when I solve a bug with a single line of code
+1190 : my reaction when I get good feedbacks at work
+1191 : when I have to go in my office during my holidays
+1192 : when a build has no errors
+1193 : my first automated job
+1194 : when I have to develop all my next web project in Javascript
+1195 : when I realize that I have left my phone at work on friday night
+1196 : when my boss gives me some tasks on friday afternoon
+1197 : when I look for this missing closing bracket
+1198 : when an unexpected issue occurs
+1199 : when I write some regex
+1200 : when I learn Cobol
+1201 : typical IT&#8217;s open space
+1202 : "I think this code needs to be refactored &#8230;"
+1203 : when the project manager says that the deadline is shortened
+1204 : when I see daylight after coding all night long
+1205 : when the PM says he wants to make some changes to the documentation on which I spent two weeks
+1206 : when I am about to do some shitty code
+1207 : when i impatiently wait the leaving hour on friday night 
+The thread 0x265c has exited with code 259 (0x103).
+1208 : when Windows automatically reboots after an update and all changes weren&#8217;t saved
+1209 : when a senior developer faces a bug
+1210 : when management changes specs one week before the deadline
+1211 : when an infinite loop takes all my computer&#8217;s resources
+1212 : when my boss congratulates me
+1213 : when I have not made SQL for 1 year and I try some queries on prod servers
+1214 : when I master a framework
+1215 : when I try to leave a doomed project
+1216 : when I quickly solve an annoying bug
+1217 : when I have to make call support
+1218 : my first recursive function
+1219 : "Hey! Can you stay late this friday night?"
+1220 : this is how interns implement subclassing
+1221 : when the demo does not go as expected
+1222 : when I hear my boss talking about my next project 
+1223 : when my boss wants to know who has dropped the wrong table
+1224 : when my boss gives me a raise
+1225 : when my day is over and my colleague has to stay late
+1226 : when I have a bad feeling about the project
+1227 : when the intern modifies my code
+1228 : when I develop without specs
+1229 : when an important client is coming
+1230 : when I come back from holidays 
+1231 : when I realize the scopes of my project are unreachable
+1232 : when the new guy fixes a bug on which I&#8217;ve been stuck on for hours in 5 minutes
+1233 : when I&#8217;m moving an element in another position in the DOM
+1234 : unexpected output
+1235 : when I let the intern write the specs and don&#8217;t have time to check
+The thread 0x21e8 has exited with code 259 (0x103).
+1236 : when it&#8217;s finally time to leave work
+1237 : when a backend developer wants to edit my sass files
+1238 : when I want to work during my holidays
+1239 : 4am, when I unsuccessfully compile for the umpteenth time
+1240 : when new bugs come right before my holidays
+1241 : when the intern tries to use my library for the first time
+1242 : when I receive an urgent ticket on friday night
+1243 : when all the servers are crashing except mine
+1244 : when someone else uses my computer
+1245 : when the deadline is near and I give to my project manager a list of bugs
+1246 : when I am about to make an important commit with a colleague behind me
+1247 : when the big boss congratulates my work
+1248 : when I give a buggy project to another colleague
+1249 : when I use a Github library which has not been updated for 2 years
+1250 : when my boss promises me a new laptop but gives it to my colleague
+1251 : "who crashed the server?"
+1252 : when the client asks if we have correctly tested the app
+1253 : when a stupid client comes in
+1254 : when the function gives an unexpected result
+1255 : first launch in production
+1256 : when I leave a project right before it crashes
+The thread 0xec8 has exited with code 259 (0x103).
+1257 : when my colleague tells me Ruby is just like Python
+1258 : when my boss suddenly appears when I am on Facebook
+1259 : when I finally release an annoying project
+1260 : "Did you deploy to test or production?"
+1261 : when a client wants me to repair his old computer
+1262 : after a one hour phone call with a client
+1263 : when I try to sleep after a long and late night coding session
+1264 : when my project is submitted to the QA team
+1265 : when the boss sends me to a security conference and asks if I learned something
+1266 : when my boss is looking for a bug fixer on friday night
+1267 : when after several days, I sucessfully master a new framework
+1268 : when I enter in the wrong meeting room
+1269 : when I fix nasty bugs right before a demo
+1270 : when I try to leave the office early
+1271 : when someone sees two developers arguing about code
+1272 : when a junior tries to impress the senior developers
+1273 : the deployment
+1274 : when a loop doesn&#8217;t want to stop
+1275 : when I am the only girl in the office
+1276 : when I see a senior developer solving a nasty bug
+The thread 0x1dfc has exited with code 259 (0x103).
+1277 : my home&#8217;s office
+1278 : when I criticize my boss&#8217; decision who is right around the corner
+1279 : when an intern tells me he discovered a bug in my code
+1280 : when I finally realize where this bug comes from
+1281 : when I work on the layout
+1282 : when the intern is assigned to a difficult task
+1283 : when the new guy successfully fixes a bug on which I was working on for 3 days
+1284 : when the intern wants to ask a question
+1285 : when my boss looks for me during lunch time
+1286 : when after two days of bug fixing, I have to use a deprecated method
+1287 : when I&#8217;ve accepted an offer from another company
+1288 : when coding an easter egg makes the app crash
+1289 : every monday morning
+1290 : when I don&#8217;t have time for writing tests
+1291 : when I don&#8217;t have to go to a boring meeting
+1292 : the &#8220;Ultimate&#8221; vs the &#8220;Free&#8221; version of a software
+1293 : when I test the alpha release
+1294 : when a shameful bug appears during a demo
+1295 : when I am about to deploy a heavily tested release
+1296 : when I enter in my office and see a new coffee machine installed right next to my desk
+1297 : when I come back from holidays and check the intern&#8217;s project
+1298 : when my web hoster tries to fix my server
+1299 : when I think my boss is not around
+1300 : when a &#8220;quick guide&#8221; project of an interesting library doesn&#8217;t work
+1301 : when developers ask for an admin access on my servers
+1302 : when the boss suddenly wants to migrate all our clients on a new server on friday night
+The thread 0x23f4 has exited with code 259 (0x103).
+1303 : when I don&#8217;t have enough coffee and the boss is coming
+1304 : when I see someone who&#8217;s trying to modify my code
+1305 : when I&#8217;m out of time and I have to use my coworker&#8217;s library instead of my optimized version
+1306 : all developers&#8217; curriculum vitae
+1307 : when I catch a program trying to secretly install toolbars
+1308 : when a colleague does not agree with our coding rules
+1309 : when I use a framework without reading the documentation
+1310 : when I don&#8217;t catch exceptions
+1311 : when I realize that I accidentally solve two bugs at the same time
+1312 : when a php fatal error passes through my try catch
+1313 : "hey look, the bug is fixed"
+1314 : when my boss tells me that I can&#8217;t leave the office until this nasty bug is fixed
+1315 : when I run a SQL script on the wrong DB because I&#8217;m in a hurry
+1316 : pair programming
+1317 : when I wait the server&#8217;s reboot
+1318 : when I am writing a very complicated code with a lot of math
+1319 : when the new project goes to &#8230; my colleague
+1320 : "let me change this little thing before the deployment"
+1321 : when I spot a bug just after I hit compile
+1322 : when the yearly bonus approaches
+1323 : when I leave the office after fixing a major bug
+1324 : unexpected output
+1325 : when a colleague asks 2 minutes of my time
+1326 : when all tests succeed on friday night
+1327 : when I write some ugly code 
+1328 : when I drop the wrong table
+1329 : when I forget to remove the breakpoint
+1330 : when I forget an AlertBox, and it suddenly appears during the demo
+1331 : when I realise the former developer didn&#8217;t encrypt passwords
+1332 : when the boss asks who wants to maintain the legacy code
+The thread 0x17d8 has exited with code 259 (0x103).
+1333 : debugging for the first time
+1334 : when someone does a big refactor on the code on which I am currently working
+1335 : behind the firewall
+1336 : when a pretty girl enters in the office
+1337 : when I go to work on monday morning
+1338 : when I delete 1000 obsolete lines of code
+1339 : when someone wants my help during lunch break
+1340 : when the client asks me if I develop in excel
+1341 : when I rather do it my way instead of following the specs
+1342 : when an intern is fixing a bug
+1343 : when I come back from vacation and see that half of my code has been modified
+1344 : when the new guy finds the solution that everybody was looking for
+1345 : when the new developer&#8217;s evaluation period ends up
+1346 : how the client imagines us fixing its bugs
+1347 : when the client wants major changes near the deadline
+1348 : when I try to sneak out of the office early, thinking that the boss is not around
+1349 : when my boss keeps emailing me useless add-ons he found on the net for the website
+1350 : my colleagues when I get a new laptop
+1351 : when the intern wants some help
+1352 : the night before the deadline when the project is late and it cannot be postponed
+1353 : two hours after the release
+1354 : when I don&#8217;t know where the nasty bug comes from 
+1355 : who programmed this shit?
+1356 : when the specifications aren&#8217;t clear enough
+1357 : when I check the intern&#8217;s code
+1358 : freelancers picking their projects 
+1359 : when the client is talking about what he plans to do with the product in the future
+1360 : when the new guy wants to help me to implement a new feature
+1361 : bug reports coming in after a big release
+1362 : when someone asks me for help on friday night
+1363 : when management spends days to plan something that takes me 3 lines of code
+1364 : when I call a wrong function in an undocumented library
+1365 : writing tests when product manager is not looking
+The thread 0x226c has exited with code 259 (0x103).
+1366 : when marketing starts talking about future features
+1367 : when I finally meet the guy who wrote the library I had to use for 2 years
+1368 : when all of a sudden the 30 days trial version expires
+1369 : farted in a meeting, everyone thought it was the boss
+1370 : when my co-worker points out mistakes in my code
+1371 : dropped IE6 support
+1372 : when the new guy doesn&#8217;t have the administrator&#8217;s rights
+1373 : when my if condition doesn&#8217;t work as expected
+1374 : when customer changes specs once the project is nearly finished
+1375 : when I finally finished debugging a legacy code
+1376 : when the server crashes and I am the last one in the office
+1377 : when I realize what exactly I am asked to do
+1378 : when the intern arrives on the first day and is actually good
+1379 : when I modify my code and realize that my boss has a demo with the client at the same time
+1380 : sales guy asks me to completely explain 1-year project in 5 minutes or less
+1381 : when I noticed that my boss looks at me while I&#8217;m doing something I shouldn&#8217;t
+1382 : when the intern wants to show me his developer&#8217;s skills
+1383 : a junior vs a senior during a huge system failure
+1384 : when the clients are about to see the new screendesign for the first time
+1385 : when I am looking at one of my old project
+1386 : when a bug surfaces during a presentation and I act like nothing is wrong
+1387 : when a library throws errors via alerts
+1388 : when I discreetly give back an horrible project to my coworker
+The thread 0x5d0 has exited with code 259 (0x103).
+1389 : when I realize that the bug that cost the client millions was caused by me
+1390 : when I compile someone else&#8217;s code and it doesn&#8217;t do what I expected
+1391 : Ten hours after I said: &#8220;It should be a five-minute change&#8221;
+1392 : when I see my boss on facebook
+1393 : the hardware team when a server crashes
+1394 : when a newcomer face our project for the first time
+1395 : when I am the only one who wants to modify an old piece of code
+1396 : when a bug appears again after a whole night trying to fix it
+1397 : when the client opens a bugged module
+1398 : when a coworker needs my help on friday night
+1399 : when I make a meeting with the customer who changes the specs every day
+1400 : this is what I think about consultants
+1401 : when something behaves in a way you didn&#8217;t expect
+1402 : when I don&#8217;t find my configuration error in apache and the server doesn&#8217;t want to start
+1403 : when the sysadmin says he will block tumblr on the network
+1404 : when my div disappears after a &#8220;position&#160;: absolute;&#8221;
+1405 : when I try to implement some piece of code picked on Stackoverflow
+1406 : when interns have the office for themselves 
+1407 : when I throw out an idea during a project meeting
+1408 : when a bug suddenly appears during the demo
+1409 : when I come back from holidays and read the intern&#8217;s released code
+1410 : when my refactor compiles on the first time
+1411 : when I accidentally make a delete cascade
+1412 : when I see a goto in a legacy code
+1413 : when I do customer support
+1414 : when I come into the server room
+The thread 0x248c has exited with code 259 (0x103).
+1415 : how I picture our apps&#8217; users
+1416 : when I leave a doomed project just in time
+1417 : when I manage to have the week that my coworker wanted for his holidays
+1418 : when a bug appears during a meeting
+1419 : when the dev tries to teach some lines of code to the designer
+1420 : when my regex finally works
+1421 : when the intern writes a try without catch
+1422 : when coworkers need my help on friday night
+1423 : when it&#8217;s not a bug but a feature
+1424 : when I handle the intern&#8217;s untested code
+1425 : when the new guy makes his first demo
+1426 : when I use CSS for the first time
+1427 : when I have to fix a bug in a colleague&#8217;s undocumented project
+1428 : when I examine the specs
+1429 : when the beautiful human resources assistant needs my help
+1430 : when I code in Python for the first time
+1431 : when I leave work whereas my code doesn&#8217;t compile
+1432 : when I try to code something in C++
+1433 : when I successfully fix a bug after working all night long
+1434 : when the project manager looks for me to fix a bug on friday night
+1435 : when I realize my boss was behind me all the time
+1436 : when I ask to the intern to solve a &#8220;small&#8221; bug
+1437 : when the intern opens the config file
+1438 : when the hardware team get a new server
+1439 : when I successfully deploy sheduled jobs on the server
+1440 : when the computer freezes 5 minutes before an important demo
+1441 : when we get permission to start coding
+1442 : when the cute intern crashes the server
+1443 : when my apprentice tries to discuss about my code
+The thread 0x1224 has exited with code 259 (0x103).
+1444 : when my boss talks about doing a night release
+1445 : when my deployment finally works
+1446 : when I make a bugfix on friday night
+1447 : when I think my refactor will be harmless
+1448 : when I try to step out of a debug session in visual studio
+1449 : when I realize right before the release I forgot an important feature
+1450 : when I think I will finish a project without any issues
+1451 : when someone modifies my code
+1452 : when I test an harmless looking framework for the first time
+1453 : when I build an imported project in Eclipse
+1454 : when the intern needs my help while I am working
+1455 : when an intern asks me to solve a bug
+1456 : when I master an API
+1457 : when I realize that I have 4&#160;1-hour meetings today
+1458 : when the project manager wants to ask me something on friday night
+1459 : when as senior developer I try to remember how to bold text in css
+1460 : when I go on Google Code
+1461 : when I get a new computer and my colleagues want to see it
+1462 : when the bug I have created is worse than expected
+1463 : When they told me the project specs wouldn&#8217;t change
+1464 : when I do a &#8216;hello world&#8217; with the new framework
+1465 : when the network is very slow
+1466 : when my big bugfix doesn&#8217;t break anything else
+1467 : when my boss asks me to check the website on IE
+1468 : when your commit breaks the build
+1469 : when I check a minor bugfix into the production server
+1470 : when I have to fix a bug on friday night
+1471 : when I find a stupid bug on a big company&#8217;s website that gives me backend access
+1472 : when the intern successfully solve a bug
+1473 : when the intern spots an error in my code
+1474 : when the specs are written by marketing
+The thread 0x21e0 has exited with code 259 (0x103).
+1475 : when I use GOTO in C# .NET
+1476 : when my boss is coming and I rush to close my browser&#8217;s tabs
+1477 : when the intern tries to fix a bug
+1478 : when I&#8217;m forced to work on a framework I don&#8217;t know
+1479 : when I remove invalid entries from the production database
+A first chance exception of type 'System.Net.WebException' occurred in System.dll
+1480 : when a developer wears a suit
+1481 : when I need some help on friday night
+1482 : when a colleague farts in the open space
+1483 : when you disassemble a DLL in order to change the output
+1484 : when I told to the junior to use Git Bash instead of GUI
+1485 : when I open my email inbox after my holidays
+1486 : when I see a page built with tables
+1487 : when I forgot to remove my debug tests from my released project
+1488 : when I hear designers discussing about apis
+1489 : my first job after college
+1490 : when I try to use powershell after not using it for a few months
+1491 : bugfixing
+1492 : when I&#8217;m asked to fix a bunch of bugs for IE
+1493 : when I hear the footsteps of my boss on friday night
+1494 : when I think my program doesn&#8217;t have bugs anymore
+1495 : "We&#8217;ve changed specs a bit, take a look"
+1496 : when I am the only developer available to implement  an important feature
+1497 : when I have to choose between quality code and just get the job done
+1498 : when I get a new computer
+1499 : when I try to fix a bug on an old legacy code
+1500 : when I see a spelling mistake during a meeting
+1501 : when my managers always change their minds
+1502 : when I clean up my code
+1503 : when I&#8217;m asked to make a demo
+1504 : when I am waking up on monday and I remember the project I was working on last friday
+1505 : when I see senior developers working
+1506 : when I fix a bug, only to introduce a new one
+1507 : when my code compiles but doesn&#8217;t give the expected output
+1508 : when I see my boss online when I check my emails on holidays
+The thread 0x1c1c has exited with code 259 (0x103).
+1509 : when I give my lib to the interns
+1510 : when I think I finally figured out how to use a library
+1511 : when another developer modify my code
+1512 : when I review an intern&#8217;s code
+1513 : when I accidentally deploy to production my untested patch
+1514 : when the project manager wants all the transitions and effects in IE8 as well
+1515 : when my boss says &#8220;whatever, just release it&#8221;
+1516 : when I find the bug in the code and someone else marks it as fixed
+1517 : when I find a nasty bug just after the deployment
+1518 : wen my broken code still works in production
+1519 : when I deploy to production without testing my code
+1520 : when I see my client&#8217;s car parked outside when I&#8217;m leaving the office 
+1521 : when a bug is stronger than me
+1522 : coffee break
+1523 : when the intern says that comments are useless
+1524 : when I accidentally drop the production instead of the test database
+1525 : when I use a lib without reading documentation
+1526 : when I see a colleague talking to the only girl that works in our office
+1527 : when it&#8217;s friday night and all tickets are closed
+1528 : my project manager
+1529 : when I oversee what the intern is coding
+1530 : "you work in IT, right? I have a problem on my computer &#8230;"
+1531 : when I am the only one to have the root access
+1532 : when my code works in test environment, but throws many errors in production
+1533 : when I imagine my life if I didn&#8217;t have to work to live 
+1534 : when a coworker tries to tell me to use tables instead of css
+1535 : when the intern send his untested code for review
+1536 : when I fix a bug right before the deployment 
+1537 : unexpected output
+1538 : my boss when I made a successful release
+1539 : friday night
+1540 : when I thought I&#8217;ve fixed a bug but it reappears later
+1541 : when I start working on a legacy code
+1542 : when I migrate a project from visual studio 2005 to 2012
+1543 : when a pretty girl walks in the corridor during a meeting
+1544 : when it is the umpteenth time I didn&#8217;t pass validation
+1545 : when my boss surprises me on facebook
+1546 : when marketing presents my app
+The thread 0xf70 has exited with code 259 (0x103).
+1547 : when I accidentally reboot the server during working hours
+1548 : when I have to implements a new feature in a legacy code
+1549 : when someone asks who broke the server
+1550 : when I leave the office on friday night and there are still bugs in my code
+1551 : when I go on the web to find how to make an update query in sql
+1552 : when the intern says he can fix my bug
+1553 : when I finish a project right before the deadline
+1554 : when I review the intern&#8217;s first pull request
+1555 : when I am waiting for IIS to stop after .NET which is running into an infinite loop
+1556 : when a girl comes in the open space 
+1557 : when I go to a job interview and they tell me they use coldfusion
+1558 : when the server restarts randomly in the middle of the release 
+1559 : when someone is messing up my code
+1560 : when I launch IE for my web tests and it wants to be my default browser
+1561 : when i&#8217;m asked to fix a bug on friday night 
+1562 : when your colleagues work on a new project, and you have to fix bugs on the old one
+1563 : when I start to use a new api
+1564 : when my computer crashes for the umpteenth time
+1565 : when an intern wants to help me
+1566 : when passwords are stored as md5 in the database
+1567 : when I wait for a full mysqldump
+1568 : when I try to locate a bug I can&#8217;t reproduce
+1569 : when I hear that IE&#8217;s compatibility is not required
+1570 : when I submit an answer on stackoverflow and it is accepted 
+1571 : when I solve a bug 5 minutes before it goes in production
+1572 : when the client wants to change the specs but changes his mind right after 
+1573 : when my boss asks for a bugfix on fiday night
+1574 : when they send me an Excel file and I realize that this is &#8220;The Database&#8221;
+1575 : when I&#8217;m forced to implement stupid features by the client
+1576 : when an unexpected exception pass through my try/catch
+1577 : when the specs&#8217; page deals with IE support
+1578 : when I successfully fix a bug in legacy code
+1579 : when my patch works
+1580 : when I go to the coffee machine and I forget to remove my headphones
+The thread 0xca0 has exited with code 259 (0x103).
+1581 : when I show to the intern a useful library
+1582 : when my colleague shows me the project&#8217;s specs
+1583 : when I have to modify a legacy code
+1584 : when a bug appears when I&#8217;m leaving the office on friday night
+1585 : when I go on holidays after all my colleagues 
+1586 : when I look at my old code
+1587 : when after a whole coding night my boss tells me that the deadline is delayed
+1588 : when my boss forces me to present a buggy application to the client
+1589 : when I change the css
+1590 : when I see that I&#8217;ve left a debug line in production
+1591 : when the client is asking you about IE6 warranty
+1592 : when my code runs but is not what I expected
+1593 : when the new project changes coding standards
+1594 : when I don&#8217;t hear my boss coming
+1595 : digestion on friday afternoon
+1596 : when I quickly fix a bug
+1597 : when my colleague&#8217;s commit forces me to rewrite my code
+1598 : when the commercial tries to sell an old software as a new one
+1599 : first test on refactored code
+1600 : when reviewing code from an outsourced company
+1601 : when I put my code in production and it fails
+1602 : when I see a controller class with more 1000 lines of code
+1603 : when I think I have a great idea 
+1604 : running the intern&#8217;s code
+1605 : when I try to follow an advice from stackoverflow
+1606 : when i&#8217;m asked to stay late on friday nights
+1607 : when I touch the legacy code
+1608 : when I quickly solve a colleague&#8217;s bug 
+1609 : when the client points out that a feature he didn&#8217;t ask doesn&#8217;t work
+1610 : when I watch my collegue coding for the first time on emacs
+1611 : when I solve a bug that nobody could for a year
+1612 : my reaction to the intern&#8217;s solution
+1613 : when I import an entire library for one function
+1614 : when after several hours, that bug is always here
+The thread 0x1784 has exited with code 259 (0x103).
+1615 : when the project manager allows me to overwrite the legacy code
+1616 : my code when the deadline approaches
+1617 : when my script finally works
+1618 : when the boss calls me to tell me that he even can&#8217;t launch the application
+1619 : when I ask to the client what OS he uses
+1620 : when marketing uses technical terms and asks if I understood
+1621 : when the client wants some &#8220;fast and minor changes&#8221;
+1622 : when I discover the features of HTML5
+1623 : when my code fails on a function I&#8217;ve just fixed for the umpteenth thousand time
+1624 : when my commit doesn&#8217;t do what I want in production
+1625 : when my untested code flawlessly works in production
+1626 : when I realize that my 1 million users web site has been hacked
+1627 : when I ignore comments in a legacy code
+1628 : when I am going to home on friday night
+1629 : when the intern tries to fix a bug
+1630 : when the intern points out a spelling mistake in my presentation
+1631 : when I solve a nasty bug just before the deadline
+1632 : when I forget to put a LIMIT on my DELETE query
+1633 : when the coffee machine is repaired
+1634 : when I try to understand a foreign code
+1635 : when they give me the admin rights on the server
+1636 : when the new intern comes in the office
+1637 : fixing the coffee machine on monday morning
+1638 : when my boss asks me to fix a bug on friday night
+1639 : when marketing promises something impossible to the client
+1640 : when the server admin unexpectedly reboot the server
+1641 : when I realize after 2 hours that my bug is caused by a missing semicolon 
+1642 : my first day with Eclipse
+1643 : when I try to follow an example on stackoverflow
+1644 : when comments don&#8217;t mean anything 
+1645 : when you know that you have some bugs, but it works perfectly during the demo
+1646 : when the client wants to add more features before the deadline
+1647 : when I get a more powerful computer
+The thread 0x5d0 has exited with code 259 (0x103).
+1648 : when I wake up on monday morning 
+1649 : leaving the office on friday night
+1650 : when developers have a first-come-first-serve-option for limited hardware upgrades
+1651 : when I read the project specs
+1652 : when a simple bug fix crashes the system
+1653 : when I clean up my code for a client demo
+1654 : when I fix one bug
+1655 : when a colleague let his session open
+1656 : when I give a thankless job to the new intern
+1657 : when I leave a doomed project just in time to work on a new one
+1658 : when I learn a new framework
+1659 : my wife when I want to code at home
+1660 : going to work on monday morning
+1661 : programming &amp; designing at the same time
+1662 : when I forgot to add the firewall exception
+1663 : senior developers looking over intern&#8217;s &#8216;fix&#8217;
+1664 : when a co-worker tells me that the answer of my question is on the intranet
+1665 : when fixing a bug creates another one
+1666 : when legacy code gives an unexpected result
+1667 : no air conditioning in the office during a heatwave 
+1668 : when I have my headphones at work
+1669 : when I finally have a build without bugs
+1670 : when debugging is easier than expected
+1671 : when the boss wants an urgent fix on friday night
+1672 : when my try-catch doesn&#8217;t work
+1673 : when you spent 4 hours on a bug only to find it was a misspelled variable name
+1674 : when I come in the morning and everyone asks me for help
+1675 : when I show to my girlfriend what I have done at work 
+1676 : when I hear the boss mentions my name in the hallway
+1677 : when the intern commits code
+1678 : when I finally have to admit that I wrote something wrong
+1679 : when I am waiting for a code review 
+The thread 0x18b8 has exited with code 259 (0x103).
+1680 : when my boss asks me to use a framework I don&#8217;t even know
+1681 : when my boss gives me an old legacy project to fix a bug
+1682 : when a bug appears on friday night
+1683 : everytime I&#8217;m asked to bugfix an application written in VB6
+1684 : when I accidentally delete more rows than expected
+1685 : when my co-worker says there is free lunch today
+1686 : when the intern wants to help me
+1687 : when I am in the middle of a marketing conversation
+1688 : when I start editing legacy code
+1689 : when a website unexpectedly plays a loud music 
+1690 : when someone asks me to share my code
+1691 : when I sit down at my office on monday morning 
+1692 : when the site crashes on friday at 5pm
+1693 : when I start my third coding night in a row
+1694 : when I check if the intern needs help
+1695 : the last 10 minutes of work
+1696 : when I realize I forgot the half of the specs the eve of the release
+1697 : when I leave a critical project
+1698 : when a bug mysteriously disappears
+1699 : when the intern tries to make tests in production
+1700 : when the boss tells me I have to fix the site on IE
+1701 : when I give my code review to the China team
+1702 : when a working application crashes for no reasons 
+1703 : monday morning
+1704 : when a co-worker interrupts my lunch break
+1705 : when I try for the first time my new A.I.
+1706 : when the server crash
+1707 : when I try to use a lib I&#8217;ve never used before
+1708 : when I realize that the incredible smart function I just programmed already exists 
+1709 : fixing a bug 10 minutes before presentation
+1710 : fixing that bug that&#8217;s been haunting you for weeks
+1711 : when the client tries a new feature on his application
+The thread 0x20b4 has exited with code 259 (0x103).
+1712 : when I hear the boss mentioning my name with a customer
+1713 : when they ask me for help on friday night
+1714 : when I misinterpret the return code
+1715 : when I have to develop a project without specs
+1716 : when I try a random solution on someone&#8217;s code and it actually fixes the bug
+1717 : when I see the list of bugs from QA after a build release
+1718 : when the client has a new idea
+1719 : when realizing the next day why my code is failing
+1720 : when the client tell us he wants to create a social network to compete with facebook
+1721 : when a new technology gets introduced and I&#8217;m the only expert
+1722 : meeting right after lunch
+1723 : when a colleague points out a bug in my code
+1724 : when refactoring a 5-year old project
+1725 : when the server crashes on friday night
+1726 : when the intern tries a new framework
+1727 : when you realise you were debugging the wrong function
+1728 : when they ask me to comment all my code
+1729 : when I start chasing bugs
+1730 : when we get the permission to start coding
+1731 : when you have the solution of a big problem and you come into the boss&#8217; office
+1732 : working after lunch&#8230;
+1733 : coming to work before the first coffee 
+1734 : when the intern working with you is wasting time on facebook instead of reading the specs
+1735 : when the intern asks me a technical question in front of the boss, that I can&#8217;t answer
+1736 : when the subroutine unexpectedly returns a null value
+The thread 0x2398 has exited with code 259 (0x103).
+1737 : when I leave the office for the weekend
+1738 : when client declares bankruptcy during the presentation
+1739 : when I resolve an epic bug
+1740 : when I have to handle the encoding of special characters in my project
+1741 : when I accidentally run a delete query in a production table
+1742 : when after making some ctrl+z I remember that my IDE doesn&#8217;t support ctrl+y
+1743 : when QA team finishes testing your software and could not find a single bug
+1744 : when you code something wrong and everybody wonder who did it
+1745 : when I think I&#8217;ve solved the problem I&#8217;ve been working all day, but it still doesn&#8217;t work
+1746 : when I discover that there is a function which replace the 20 lines of code I just wrote
+1747 : when I let the intern do his first transactional operation alone
+1748 : output is slightly different than expected
+1749 : when that bug you were chasing for days and thought you had fixed happens again
+1750 : when the boss solution doesn&#8217;t work
+1751 : PHP error: &lsquo;Parse error: syntax error, unexpected &lsquo;)&rsquo;, expecting T_PAAMAYIM_NEKUDOTAYIM&rsquo;
+1752 : when refactoring working code
+1753 : when I am taking a look at the intern&#8217;s code
+1754 : managers responding to an urgent issue
+1755 : when the client keeps changing the specs during development
+1756 : when after 2 hours of debugging, I discover that the problem comes from another function
+1757 : when the installation runs until 99% and then fails
+1758 : "Did you make the change that broke our production server?"
+The thread 0x161c has exited with code 259 (0x103).
+1759 : when I am looking for a useful function in my old projects
+1760 : when my co-worker explains to me what the problem was after hours of panic
+1761 : bug fixing on a friday night
+1762 : sure, all the production problems are under control
+1763 : everything working fine on dev, deploying to production
+1764 : when an angry client comes in
+1765 : when I&#8217;m compiling a target on Xcode and it returns an error on an empty line
+1766 : when the interns ask for help to fix a bug
+1767 : senior developer explaining how to use his library
+1768 : code refactoring
+1769 : when my program doesn&#8217;t run
+1770 : when someone enlightens me about a super time-saving keyboard shortcut
+1771 : when a bad rm command accidentally deletes production files
+1772 : when I am asked to try out an undocumented api
+1773 : when I&#8217;m asked to correct someone else&#8217;s bug on friday
+1774 : when I try to stop an infinite loop
+1775 : when a colleague shows me a bug in my code 
+1776 : when the guy accross the room gives me uncommented code
+1777 : when they ask me to change the link color for the website and it is after 6pm
+1778 : coding for 2 hours straight, first test, no bug
+The thread 0x23d0 has exited with code 259 (0x103).
+1779 : when a colleague left an unresolved conflict in the SVN repository
+1780 : when marketing announce to developers what they have sold
+1781 : when it is announced a deadline is relaxed by three weeks
+1782 : 'sure, all the code I write is well commented'
+1783 : when marketing uses a technical term correctly
+1784 : when I switch on my computer after coming back from holidays
+1785 : critical bug report on friday evening
+1786 : when I close my IDE without saving 
+1787 : when I show the intern a time-saving feature
+1788 : when I see what marketing has promised
+1789 : when the client tells me it&#8217;s just a minor modification
+1790 : when I discover that passwords are stored as plaintext in the database
+1791 : when I start using a 3rd-party lib and notice there is no documentation
+1792 : when I fix a bug without testing
+1793 : pushing code to production without removing the shitty test alerts
+1794 : when the intern tells me he has dropped a table from our database to test something
+1795 : changed one line of code, bug is fixed
+1796 : when a colleague shows me a bug on a friday night
+1797 : when I go through old projects
+1798 : after my colleagues checked the logs and realized the crash is my fault
+1799 : when I review the intern&#8217;s code
+1800 : what the client sees when I open the console in front of him
+1801 : when I hit &#8216;refactor&#8217; in my IDE
+1802 : when the boss wants me to see a bug in our app
+1803 : going to a restaurant after a hard coding day
+1804 : investigating variables at breakpoint
+1805 : when I have to edit unindented and uncommented code
+1806 : when I launch a compilation on my fresh new computer
+1807 : after staring at code for 30 minutes
+1808 : before submitting code for review
+1809 : when I have 10 consecutive compile successes
+The thread 0xec0 has exited with code 259 (0x103).
+1810 : when an urgent bug comes in after working hours
+1811 : that moment when I realize a rollback is unavoidable
+1812 : when I realize I forgot a closing tag
+1813 : when they ask me if I have updated the documentation
+1814 : expecting a lot of errors after compilation
+1815 : when the intern shows me a bug on a friday afternoon
+1816 : when I see my code from 5 years ago
+1817 : when a bug that I fixed resurfaces a few days later
+1818 : when a client reports a bug right after we&#8217;ve &#8220;successfully&#8221; launched the project
+1819 : when my commit broke the build but I managed to revert it a second after
+1820 : when I fix a bug just before the deadline
+1821 : when I have finished a task and close umpteen browser tabs on that subject
+1822 : when I update my code and there are no conflicts
+1823 : when 40 files must be merged
+1824 : when I leave the office after destroying a project I was supposed to repair
+1825 : when I realize I let the SSL certificates expire
+1826 : when putting a breakpoint in my code
+1827 : when the intern wants to help us with big problems
+1828 : when my code works on the first try
+1829 : when the client wants its website built with Flash
+1830 : when testing if the fix solves the bug
+1831 : when everything goes unexpectedly smoothly
+1832 : hoping my 3 months of coding experience is enough to fix this bug
+1833 : when a client demands to speak to the project leader
+1834 : when the project works 5 minutes before it is presented
+1835 : when they talk about ie6 compatibility with a client
+The thread 0x1e30 has exited with code 259 (0x103).
+1836 : friday 5pm &amp;&amp; builds all green
+1837 : when the fire alarm is triggered but I am actually more interested in what I am doing
+1838 : when I am made head developer on a project
+1839 : when my project crashes 30 minutes before I present it
+1840 : when I launch an old version of IE to verify compatibility
+1841 : answering a customer&#8217;s phone call
+1842 : when the specs change. again.
+1843 : when the library has a very good documentation
+1844 : when I realize there is an infinite loop in my function
+1845 : when I debug in production like a boss
+1846 : when it&#8217;s friday 4pm and suddenly a wild bug report comes in
+1847 : when the new guy accidentally unplug my computer with his foot
+1848 : when I must code without specs
+1849 : how it feels like when speed debugging goes right
+1850 : when I open the folder that contains code from the intern
+1851 : when I announce a delay to a client
+1852 : when I see someone write his first ever lines of code
+1853 : have you added where to your delete statement?
+1854 : when a feature I don&#8217;t want to write gets descoped
+1855 : when a presentation is almost over and the system crashes
+1856 : when the client asks us to create a social platform to compete with Facebook
+1857 : when I read the project specs for the first time 
+1858 : when they ask me to make a production update friday night
+1859 : when I go to eat after a successful compile
+1860 : when they demand I repair the code made by a summer intern
+1861 : when I accidentally create a fork-bomb and it crashes my university servers
+1862 : when I import a project into eclipse and it displays 417 errors
+1863 : when a bug goes unnoticed in a presentation
+1864 : when my co-worker wants to simplify code that took two days to understand
+1865 : when the app crashes the night before release without reason
+1866 : when I replace 200 lines of my co-worker&#8217;s code with 10 lines
+1867 : when they ask me if I checked rendering with IE
+The thread 0x25cc has exited with code 259 (0x103).
+1868 : when a misformed sql query actually returns me the correct results
+1869 : when things that worked friday don&#8217;t work monday
+1870 : when the client tries to talk to me on friday night
+1871 : when I am counting the brackets to find the open block
+1872 : when I am asked about something in the 900 pages of documentation
+1873 : when a client asks me for a useless feature
+1874 : when I am given one week for a project that will take five
+1875 : when my coup to have IE6 removed from the specs is successful
+1876 : when I see someone commit 500 files to fix one bug
+1877 : when I notice I was editing production code and I quickly correct my errors
+1878 : when launch of eclipse shows me error 300 cannot be resolved to a type
+1879 : when I realize that I used a library that is deprecated 
+1880 : when I am certain that my ninja-commit won&#8217;t affect anything
+1881 : when I open my code on monday morning
+1882 : when I finish implementing a new functionality just before the weekend
+1883 : when an intern tells me tests are for people who don&#8217;t know how to code
+1884 : when I try a solution without reading the docs
+1885 : when my supervisor comes to see me after I find a bug in my last commit
+1886 : when a presentation appears to have gone well
+1887 : when I follow a tutorial to the letter and there are dozens of errors
+1888 : when I upload something to production environment
+1889 : when I accidentally click &#8216;rebuild&#8217; in visual studio
+1890 : when after a big update I test the new site with IE
+1891 : when the intern spills his coffee on my keyboard
+1892 : when I must sit through a technical presentation by marketing
+1893 : when my driver tells me that his code is working
+1894 : when someone asks for a hand on friday evening
+1895 : when i need to do a quick-fix to correct a bug in production
+1896 : when I read a technical document written by marketing
+1897 : when I check during my lunchtime to see if compiling was successful
+The thread 0x760 has exited with code 259 (0x103).
+1898 : when the project manager chances to see me on facebook
+1899 : when I cut access to a client who didn&#8217;t pay
+1900 : when marketing tries to use technical terms
+1901 : when the keyboard of my emulator is in chinese // android
+1902 : when I realize I used a library that is deprecated 
+1903 : when I fix a bug nobody else wanted to look at
+1904 : when someone suggests we take coffee instead of working
+1905 : when eclipse shows me errors before I have finished writing the function
+1906 : when my pages pass W3C validation
+1907 : when I am the only one to notice a bug on friday night
+1908 : when the project manager learns that I haven&#8217;t respected the norms
+1909 : when they ask if I tested it
+1910 : when I start a coding session but end up on facebook
+1911 : when I see a client talking to a marketing guy at the coffee machine
+1912 : when a client tries to click on our screenschots during a presentation
+1913 : when I wait for a long compile
+1914 : when I apply the new CSS for the first time
+1915 : when a bug passed unnoticed during a client presentation
+1916 : when after an umpteenth debug the app finally runs
+1917 : when the network is down
+1918 : when the product manager enters the office
+1919 : ninja-fixing a bug 10 minutes before the demo
+1920 : when they ask me to fix one of my coworker&#8217;s bugs
+1921 : discovering the solution to my problem on stack overflow
+1922 : when the intern submits a new feature idea
+1923 : when I have to update a regular expression
+1924 : when they tell me the website has to be supported by IE6
+1925 : when I see uncommented code
+1926 : when I have to edit a piece of code that I have not seen in 3 months
+1927 : when I am in charge of a project
+The thread 0x390 has exited with code 259 (0x103).
+1928 : when I discovered regular expressions
+1929 : when I use the keyboard shortcuts in eclipse
+1930 : whenever I try to align the tweet, like and +1 buttons
+1931 : when the deadline is approaching dangerously fast
+1932 : when a project crashes 30 minutes before its presentation
+1933 : when the boss is looking for someone to work on a complex and urgent debug
+1934 : when I compile a simple HelloWorld with Maven
+1935 : when they give me a 900 pages documentation
+1936 : when they ask me if a feature I have never heard of has been developed
+1937 : when I take a look at the intern&#8217;s code folder
+1938 : when the app did not crash during a presentation
+1939 : when the app goes beta and the first bug reports are coming in
+1940 : when they want me to work on the design
+1941 : when a big SQL query works on the first try
+1942 : when I come back to a piece of code that I did not comment
+1943 : the day I discovered regular expressions
+1944 : when I am asked to update the documentation
+1945 : when I reduce the 200 lines of my teammate&#8217;s code to ten
+1946 : when I find a solution without using Google
+1947 : when I have lost an hour because of a forgotten bracket
+1948 : when my teammate makes me understand that his code finally works
+1949 : when I launch my script for the first time
