@@ -54,6 +54,14 @@ public class SolrSaveAdapter {
         {
         	for (SolrInsertImageEntity solrInsertImageEntity : solrInsertImageEntityList) {
         		
+        		List<String> tags = new ArrayList<String>();
+        		if(solrInsertImageEntity.getTagsString() != null)
+        		{
+        			for (String tag : solrInsertImageEntity.getTagsString().split(",")) {
+        				tags.add(tag);
+    				}
+        		}
+        		
         		SolrInputDocument doc = new SolrInputDocument();
         		doc.addField("id", solrInsertImageEntity.getId());
                 doc.addField("title", solrInsertImageEntity.getTitle());
