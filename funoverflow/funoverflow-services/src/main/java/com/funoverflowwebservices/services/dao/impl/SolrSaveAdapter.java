@@ -67,7 +67,7 @@ public class SolrSaveAdapter {
                 doc.addField("title", solrInsertImageEntity.getTitle());
                 doc.addField("description", solrInsertImageEntity.getDescription());
                 doc.addField("author", solrInsertImageEntity.getAuthor());
-                doc.addField("tags", solrInsertImageEntity.getTags());
+                doc.addField("tags", tags);
                 doc.addField("imageurl_l",solrInsertImageEntity.getImageurl_l());
                 doc.addField("last_modified", solrInsertImageEntity.getLast_modified());
                 add = solrServer.add(doc);
