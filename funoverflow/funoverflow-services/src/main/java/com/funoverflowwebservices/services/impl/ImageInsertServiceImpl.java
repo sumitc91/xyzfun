@@ -107,4 +107,10 @@ public class ImageInsertServiceImpl implements ImageInsertService {
 		return solrInsertImageEntityList;
 	}
 
+	public List<SolrInsertImageEntity> getFunOverflowImagesFromSolr(
+			Map<String, String> searchCriteria) throws FunOverflowBaseException {
+		// TODO Auto-generated method stub
+		return solrSaveAdapter.getFunOverflowImagesFromSolr(searchCriteria);
+	}
+
 }

@@ -2,15 +2,31 @@ package com.funoverflowwebservices.common.core.vo;
 
 import java.util.List;
 
+import org.apache.solr.client.solrj.beans.Field;
+
 public class SolrInsertImageEntity {
 
+	@Field("id")
 	private String id;
+	
+	@Field("title")
 	private String title;
+	
+	@Field("description")
 	private String description;
+	
+	@Field("author")
 	private String author;
+	
+	@Field("tags")
 	private List<String> tags;
+	
 	private String tagsString;
+	
+	@Field("imageurl_l")
 	private String imageurl_l;
+	
+	@Field("last_modified")
 	private String last_modified;
 	public String getId() {
 		return id;

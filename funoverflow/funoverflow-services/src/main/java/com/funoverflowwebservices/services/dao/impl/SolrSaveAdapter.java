@@ -7,8 +7,11 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.apache.solr.client.solrj.SolrQuery;
+import org.apache.solr.client.solrj.SolrRequest.METHOD;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.SolrServerException;
+import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.client.solrj.response.UpdateResponse;
 import org.apache.solr.common.SolrInputDocument;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -92,6 +95,27 @@ public class SolrSaveAdapter {
         
     }
 
+    public List<SolrInsertImageEntity> getFunOverflowImagesFromSolr(Map<String,String> searchCriteria)
+            throws FunOverflowBaseException {
+            SolrServer solrServer = solrFunoverflowTemplate.getSolrServer();
+            SolrQuery query = new SolrQuery();
+            
+            String fetchFrom=searchCriteria.get("fetchFrom");
+            String fetchUpto = searchCriteria.get("fetchUpto");
+            query.add("q", "*:*");
+            query.add("sort", "last_modified desc");            
+            query.add("start", fetchFrom);
+            query.add("rows", fetchUpto);
+            log.debug("Solr Query: "+ query.getQuery());
+
+            try {
+                QueryResponse queryResponse = solrServer.query(query, METHOD.POST);
+                List<SolrInsertImageEntity> list = queryResponse.getBeans(SolrInsertImageEntity.class);
+                return list;
+            } catch (SolrServerException e) {
+                throw new FunOverflowBaseException("90", "getFunOverflowImagesFromSolr exception", e, false);
+            }
+        }
 	
 
 }

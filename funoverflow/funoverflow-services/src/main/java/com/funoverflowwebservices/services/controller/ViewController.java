@@ -1,8 +1,9 @@
 package com.funoverflowwebservices.services.controller;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -15,12 +16,14 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.funoverflowwebservices.common.core.exception.ErrorCodes;
 import com.funoverflowwebservices.common.core.exception.FunOverflowBaseException;
 import com.funoverflowwebservices.common.core.exception.InvalidRequestException;
 import com.funoverflowwebservices.common.core.utils.ApiUrlSource;
+import com.funoverflowwebservices.common.core.vo.SolrInsertImageEntity;
 import com.funoverflowwebservices.common.domain.Response;
 import com.funoverflowwebservices.common.request.vo.NewImageInsertRequestObject;
 import com.funoverflowwebservices.services.ImageInsertService;
@@ -83,16 +86,14 @@ public class ViewController extends AbstractController{
 		
 	}
 	
-	@RequestMapping(value = "/moveSqlImagesToSolr")
-	public ModelAndView moveSqlImagesToSolr(HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse) throws FunOverflowBaseException, SolrServerException, IOException{
+	@RequestMapping(value = "/moveSqlImagesToSolr", method = RequestMethod.GET, headers = "Accept=*/*")
+	public void moveSqlImagesToSolr(HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse) throws FunOverflowBaseException, SolrServerException, IOException{
 		
 		Response response = new Response();
-		ModelAndView modelAndView =new ModelAndView();
-		modelAndView.setViewName("activation");
-		String message;
+		
 		try 
 		{
-			imageInsertService.fetchAndInsertNewImageFromMySqlToSolr();
+			response = imageInsertService.fetchAndInsertNewImageFromMySqlToSolr();
 		}
 		catch (FunOverflowBaseException funOverflowBaseException) 
 		{
@@ -102,9 +103,41 @@ public class ViewController extends AbstractController{
 			response.setResponseDetails("ERROR", funOverflowBaseException.getMessage());
 			renderView(httpServletRequest, httpServletResponse, response);*/
 		}
-		message = "success";
 		
-		modelAndView.addObject("message",message );
-		return modelAndView;
+		
+		renderView(httpServletRequest, httpServletResponse, response);
+	}
+	
+	@RequestMapping(value = "/getFunOverflowImages", method = RequestMethod.GET, headers = "Accept=*/*")
+	public void getVerifiedDetails(HttpServletRequest HTTPRequest,
+			HttpServletResponse HTTPResponse,
+			@RequestParam("fetchFrom") String fetchFrom,@RequestParam("fetchUpto") String fetchUpto) {
+		Response response = new Response();
+		try {
+
+			if(fetchFrom == null)
+				fetchFrom = "0";
+			if(fetchUpto == null)
+				fetchUpto = "10";
+			
+			
+			Map<String,String> searchCriteria = new HashMap<String,String>();
+			searchCriteria.put("fetchFrom", fetchFrom);
+			searchCriteria.put("fetchUpto", fetchUpto);
+			
+			List<SolrInsertImageEntity> solrInsertImageEntitiesList = imageInsertService.getFunOverflowImagesFromSolr(searchCriteria);
+			
+			response.setResponseCode("200");
+			response.setResponseMessage("success");
+			response.setResponseDetails("data", solrInsertImageEntitiesList);
+			
+			renderView(HTTPRequest, HTTPResponse, response);
+		} catch (Exception e) {
+			log.error("IsBuddyMeUserAccountExists Exception", e);
+			response.setResponseCode("500");
+			response.setResponseMessage("IsBuddyMeUserAccountExists Exception");
+			response.setResponseDetails("ERROR", e.getLocalizedMessage());
+			renderView(HTTPRequest, HTTPResponse, response);
+		}
 	}
 }

@@ -248,6 +248,7 @@ p {
     border-radius:0;
     box-shadow:none;
     text-align:center;
+    min-height: 300px;
     background: #191a1c;
 }
 .thumbnail .more {
@@ -792,6 +793,12 @@ p {
     color:#181A1C;
 }
 /*
+
+.fixedHeightWidht640400
+{
+  width: 640px;
+  height: 400px;
+}
 3.8 Footer
 ********************************************************************/
  .footer {

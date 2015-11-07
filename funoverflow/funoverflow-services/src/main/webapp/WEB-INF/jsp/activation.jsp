@@ -30,45 +30,18 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/images/apple-touch-icon-72.png">
         <link rel="apple-touch-icon-precomposed" href="resources/images/ico/apple-touch-icon-57.png">
         <link rel="shortcut icon" href="resources/images/ico/favicon.ico">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
     </head>
     
-    <body>
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a href="#" class="brand">
-                        <img src="resources/images/logo.png" width="120" height="40" alt="Logo" />
-                        <!-- This is website logo -->
-                    </a>
-                    <!-- Navigation button, visible on small resolution -->
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <i class="icon-menu"></i>
-                    </button>
-                    <!-- Main navigation -->
-                    <div class="nav-collapse collapse pull-right">
-                        <ul class="nav" id="top-navigation">
-                            <li class="active"><a href="#home">Home</a></li>
-                            <li><a href="#service">Services</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#clients">Clients</a></li>
-                            <li><a href="#price">Price</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <!-- End main navigation -->
-                </div>
-            </div>
-        </div>
+    <body ng-app="myapp" ng-controller="HelloController">
+        
     
         <!-- Portfolio section start -->
         <div class="section secondary-section " id="portfolio">
             <div class="triangle"></div>
             <div class="container">
-                <div class=" title">
-                    <h1>Have You Seen our Works?</h1>
-                    <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
-                </div>
+                
                 <ul class="nav nav-pills">
                     <li class="filter" data-filter="all">
                         <a href="#noAction">All</a>
@@ -87,27 +60,24 @@
                 <div id="single-project">
                     <div id="slidingDiv" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="resources/images/Portfolio01.png" alt="project 1" />
+                            <img src="{{githubImageUrl}}/{{funOverflowImages[0].imageurl_l}}" alt="loading..." />
                         </div>
                         <div class="span6">
                             <div class="project-description">
                                 <div class="project-title clearfix">
-                                    <h3>Webste for Some Client</h3>
+                                    <h3 ng-bind="funOverflowImages[0].title"></h3>
                                     <span class="show_hide close">
                                         <i class="icon-cancel"></i>
                                     </span>
                                 </div>
                                 <div class="project-info">
+                                    
+                        
                                     <div>
-                                        <span>Client</span>Some Client Name</div>
-                                    <div>
-                                        <span>Date</span>July 2013</div>
-                                    <div>
-                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
-                                    <div>
-                                        <span>Link</span>http://examplecomp.com</div>
+                                        <span>Skills</span><span ng-repeat="tag in funOverflowImages[0].tags"><span ng-bind="tag"></span> &nbsp &nbsp</span></div>
+                                    
                                 </div>
-                                <p>Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.</p>
+                                <p ng-bind="funOverflowImages[0].description"></p>
                             </div>
                         </div>
                     </div>
@@ -115,27 +85,24 @@
                     <!-- Start details for portfolio project 2 -->
                     <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="resources/images/Portfolio02.png" alt="project 2">
+                            <img src="{{githubImageUrl}}/{{funOverflowImages[1].imageurl_l}}" alt="loading..." />
                         </div>
                         <div class="span6">
                             <div class="project-description">
                                 <div class="project-title clearfix">
-                                    <h3>Webste for Some Client</h3>
+                                    <h3 ng-bind="funOverflowImages[1].title"></h3>
                                     <span class="show_hide close">
                                         <i class="icon-cancel"></i>
                                     </span>
                                 </div>
                                 <div class="project-info">
+                                    
+                        
                                     <div>
-                                        <span>Client</span>Some Client Name</div>
-                                    <div>
-                                        <span>Date</span>July 2013</div>
-                                    <div>
-                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
-                                    <div>
-                                        <span>Link</span>http://examplecomp.com</div>
+                                        <span>Skills</span><span ng-repeat="tag in funOverflowImages[1].tags"><span ng-bind="tag"></span> &nbsp &nbsp</span></div>
+                                    
                                 </div>
-                                <p>Life is a song - sing it. Life is a game - play it. Life is a challenge - meet it. Life is a dream - realize it. Life is a sacrifice - offer it. Life is love - enjoy it.</p>
+                                <p ng-bind="funOverflowImages[1].description"></p>
                             </div>
                         </div>
                     </div>
@@ -143,27 +110,24 @@
                     <!-- Start details for portfolio project 3 -->
                     <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="resources/images/Portfolio03.png" alt="project 3">
+                            <img src="{{githubImageUrl}}/{{funOverflowImages[2].imageurl_l}}" alt="loading..." />
                         </div>
                         <div class="span6">
                             <div class="project-description">
                                 <div class="project-title clearfix">
-                                    <h3>Webste for Some Client</h3>
+                                    <h3 ng-bind="funOverflowImages[2].title"></h3>
                                     <span class="show_hide close">
                                         <i class="icon-cancel"></i>
                                     </span>
                                 </div>
                                 <div class="project-info">
+                                    
+                        
                                     <div>
-                                        <span>Client</span>Some Client Name</div>
-                                    <div>
-                                        <span>Date</span>July 2013</div>
-                                    <div>
-                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
-                                    <div>
-                                        <span>Link</span>http://examplecomp.com</div>
+                                        <span>Skills</span><span ng-repeat="tag in funOverflowImages[2].tags"><span ng-bind="tag"></span> &nbsp &nbsp</span></div>
+                                    
                                 </div>
-                                <p>How far you go in life depends on your being tender with the young, compassionate with the aged, sympathetic with the striving and tolerant of the weak and strong. Because someday in your life you will have been all of these.</p>
+                                <p ng-bind="funOverflowImages[2].description"></p>
                             </div>
                         </div>
                     </div>
@@ -171,27 +135,24 @@
                     <!-- Start details for portfolio project 4 -->
                     <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="resources/images/Portfolio04.png" alt="project 4">
+                            <img src="{{githubImageUrl}}/{{funOverflowImages[3].imageurl_l}}" alt="loading..." />
                         </div>
                         <div class="span6">
                             <div class="project-description">
                                 <div class="project-title clearfix">
-                                    <h3>Project for Some Client</h3>
+                                    <h3 ng-bind="funOverflowImages[3].title"></h3>
                                     <span class="show_hide close">
                                         <i class="icon-cancel"></i>
                                     </span>
                                 </div>
                                 <div class="project-info">
+                                    
+                        
                                     <div>
-                                        <span>Client</span>Some Client Name</div>
-                                    <div>
-                                        <span>Date</span>July 2013</div>
-                                    <div>
-                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
-                                    <div>
-                                        <span>Link</span>http://examplecomp.com</div>
+                                        <span>Skills</span><span ng-repeat="tag in funOverflowImages[3].tags"><span ng-bind="tag"></span> &nbsp &nbsp</span></div>
+                                    
                                 </div>
-                                <p>Life's but a walking shadow, a poor player, that struts and frets his hour upon the stage, and then is heard no more; it is a tale told by an idiot, full of sound and fury, signifying nothing.</p>
+                                <p ng-bind="funOverflowImages[3].description"></p>
                             </div>
                         </div>
                     </div>
@@ -199,27 +160,24 @@
                     <!-- Start details for portfolio project 5 -->
                     <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="resources/images/Portfolio05.png" alt="project 5">
+                            <img src="{{githubImageUrl}}/{{funOverflowImages[4].imageurl_l}}" alt="loading..." />
                         </div>
                         <div class="span6">
                             <div class="project-description">
                                 <div class="project-title clearfix">
-                                    <h3>Webste for Some Client</h3>
+                                    <h3 ng-bind="funOverflowImages[4].title"></h3>
                                     <span class="show_hide close">
                                         <i class="icon-cancel"></i>
                                     </span>
                                 </div>
                                 <div class="project-info">
+                                    
+                        
                                     <div>
-                                        <span>Client</span>Some Client Name</div>
-                                    <div>
-                                        <span>Date</span>July 2013</div>
-                                    <div>
-                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
-                                    <div>
-                                        <span>Link</span>http://examplecomp.com</div>
+                                        <span>Skills</span><span ng-repeat="tag in funOverflowImages[4].tags"><span ng-bind="tag"></span> &nbsp &nbsp</span></div>
+                                    
                                 </div>
-                                <p>We need to give each other the space to grow, to be ourselves, to exercise our diversity. We need to give each other space so that we may both give and receive such beautiful things as ideas, openness, dignity, joy, healing, and inclusion.</p>
+                                <p ng-bind="funOverflowImages[4].description"></p>
                             </div>
                         </div>
                     </div>
@@ -227,27 +185,24 @@
                     <!-- Start details for portfolio project 6 -->
                     <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="resources/images/Portfolio06.png" alt="project 6">
+                            <img src="{{githubImageUrl}}/{{funOverflowImages[5].imageurl_l}}" alt="loading..." />
                         </div>
                         <div class="span6">
                             <div class="project-description">
                                 <div class="project-title clearfix">
-                                    <h3>Webste for Some Client</h3>
+                                    <h3 ng-bind="funOverflowImages[5].title"></h3>
                                     <span class="show_hide close">
                                         <i class="icon-cancel"></i>
                                     </span>
                                 </div>
                                 <div class="project-info">
+                                    
+                        
                                     <div>
-                                        <span>Client</span>Some Client Name</div>
-                                    <div>
-                                        <span>Date</span>July 2013</div>
-                                    <div>
-                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
-                                    <div>
-                                        <span>Link</span>http://examplecomp.com</div>
+                                        <span>Skills</span><span ng-repeat="tag in funOverflowImages[5].tags"><span ng-bind="tag"></span> &nbsp &nbsp</span></div>
+                                    
                                 </div>
-                                <p>I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.</p>
+                                <p ng-bind="funOverflowImages[5].description"></p>
                             </div>
                         </div>
                     </div>
@@ -255,27 +210,24 @@
                     <!-- Start details for portfolio project 7 -->
                     <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="resources/images/Portfolio07.png" alt="project 7">
+                            <img src="{{githubImageUrl}}/{{funOverflowImages[6].imageurl_l}}" alt="loading..." />
                         </div>
                         <div class="span6">
                             <div class="project-description">
                                 <div class="project-title clearfix">
-                                    <h3>Webste for Some Client</h3>
+                                    <h3 ng-bind="funOverflowImages[6].title"></h3>
                                     <span class="show_hide close">
                                         <i class="icon-cancel"></i>
                                     </span>
                                 </div>
                                 <div class="project-info">
+                                    
+                        
                                     <div>
-                                        <span>Client</span>Some Client Name</div>
-                                    <div>
-                                        <span>Date</span>July 2013</div>
-                                    <div>
-                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
-                                    <div>
-                                        <span>Link</span>http://examplecomp.com</div>
+                                        <span>Skills</span><span ng-repeat="tag in funOverflowImages[6].tags"><span ng-bind="tag"></span> &nbsp &nbsp</span></div>
+                                    
                                 </div>
-                                <p>Always continue the climb. It is possible for you to do whatever you choose, if you first get to know who you are and are willing to work with a power that is greater than ourselves to do it.</p>
+                                <p ng-bind="funOverflowImages[6].description"></p>
                             </div>
                         </div>
                     </div>
@@ -283,27 +235,24 @@
                     <!-- Start details for portfolio project 8 -->
                     <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="resources/images/Portfolio08.png" alt="project 8">
+                            <img src="{{githubImageUrl}}/{{funOverflowImages[7].imageurl_l}}" alt="loading..." />
                         </div>
                         <div class="span6">
                             <div class="project-description">
                                 <div class="project-title clearfix">
-                                    <h3>Webste for Some Client</h3>
+                                    <h3 ng-bind="funOverflowImages[7].title"></h3>
                                     <span class="show_hide close">
                                         <i class="icon-cancel"></i>
                                     </span>
                                 </div>
                                 <div class="project-info">
+                                    
+                        
                                     <div>
-                                        <span>Client</span>Some Client Name</div>
-                                    <div>
-                                        <span>Date</span>July 2013</div>
-                                    <div>
-                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
-                                    <div>
-                                        <span>Link</span>http://examplecomp.com</div>
+                                        <span>Skills</span><span ng-repeat="tag in funOverflowImages[7].tags"><span ng-bind="tag"></span> &nbsp &nbsp</span></div>
+                                    
                                 </div>
-                                <p>What if you gave someone a gift, and they neglected to thank you for it - would you be likely to give them another? Life is the same way. In order to attract more of the blessings that life has to offer, you must truly appreciate what you already have.</p>
+                                <p ng-bind="funOverflowImages[7].description"></p>
                             </div>
                         </div>
                     </div>
@@ -311,134 +260,135 @@
                     <!-- Start details for portfolio project 9 -->
                     <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
                         <div class="span6">
-                            <img src="resources/images/Portfolio09.png" alt="project 9">
+                            <img src="{{githubImageUrl}}/{{funOverflowImages[8].imageurl_l}}" alt="loading..." />
                         </div>
                         <div class="span6">
                             <div class="project-description">
                                 <div class="project-title clearfix">
-                                    <h3>Webste for Some Client</h3>
+                                    <h3 ng-bind="funOverflowImages[8].title"></h3>
                                     <span class="show_hide close">
                                         <i class="icon-cancel"></i>
                                     </span>
                                 </div>
                                 <div class="project-info">
+                                    
+                        
                                     <div>
-                                        <span>Client</span>Some Client Name</div>
-                                    <div>
-                                        <span>Date</span>July 2013</div>
-                                    <div>
-                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
-                                    <div>
-                                        <span>Link</span>http://examplecomp.com</div>
+                                        <span>Skills</span><span ng-repeat="tag in funOverflowImages[8].tags"><span ng-bind="tag"></span> &nbsp &nbsp</span></div>
+                                    
                                 </div>
-                                <p>I learned that we can do anything, but we can't do everything... at least not at the same time. So think of your priorities not in terms of what activities you do, but when you do them. Timing is everything.</p>
+                                <p ng-bind="funOverflowImages[8].description"></p>
                             </div>
                         </div>
                     </div>
                     <!-- End details for portfolio project 9 -->
                     <ul id="portfolio-grid" class="thumbnails row">
-                        <li class="span4 mix web">
+                        <li class="span4 mix web fixedHeightWidht640400">
                             <div class="thumbnail">
-                                <img src="resources/images/Portfolio01.png" alt="project 1">
+                                <img src="{{githubImageUrl}}/{{funOverflowImages[0].imageurl_l}}" alt="loading...">
                                 <a href="#single-project" class="more show_hide" rel="#slidingDiv">
                                     <i class="icon-plus"></i>
-                                </a>
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                </a>   
+                                                           
+                                <p ng-bind="funOverflowImages[0].title"></p>
                                 <div class="mask"></div>
                             </div>
                         </li>
-                        <li class="span4 mix photo">
+                        <li class="span4 mix photo fixedHeightWidht640400">
                             <div class="thumbnail">
-                                <img src="resources/images/Portfolio02.png" alt="project 2">
+                                <img src="{{githubImageUrl}}/{{funOverflowImages[1].imageurl_l}}" alt="loading...">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
                                     <i class="icon-plus"></i>
                                 </a>
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <p ng-bind="funOverflowImages[1].title"></p>
                                 <div class="mask"></div>
                             </div>
                         </li>
-                        <li class="span4 mix identity">
+                        <li class="span4 mix identity fixedHeightWidht640400">
                             <div class="thumbnail">
-                                <img src="resources/images/Portfolio03.png" alt="project 3">
+                                <img src="{{githubImageUrl}}/{{funOverflowImages[2].imageurl_l}}" alt="loading...">
                                 <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
                                     <i class="icon-plus"></i>
                                 </a>
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <p ng-bind="funOverflowImages[2].title"></p>
                                 <div class="mask"></div>
                             </div>
                         </li>
                         <li class="span4 mix web">
                             <div class="thumbnail">
-                                <img src="resources/images/Portfolio04.png" alt="project 4">
+                                <img src="{{githubImageUrl}}/{{funOverflowImages[3].imageurl_l}}" alt="loading...">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv3">
                                     <i class="icon-plus"></i>
                                 </a>
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <p ng-bind="funOverflowImages[3].title"></p>
                                 <div class="mask"></div>
                             </div>
                         </li>
                         <li class="span4 mix photo">
                             <div class="thumbnail">
-                                <img src="resources/images/Portfolio05.png" alt="project 5">
+                                <img src="{{githubImageUrl}}/{{funOverflowImages[4].imageurl_l}}" alt="loading...">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv4">
                                     <i class="icon-plus"></i>
                                 </a>
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <p ng-bind="funOverflowImages[4].title"></p>
                                 <div class="mask"></div>
                             </div>
                         </li>
                         <li class="span4 mix identity">
                             <div class="thumbnail">
-                                <img src="resources/images/Portfolio06.png" alt="project 6">
+                                <img src="{{githubImageUrl}}/{{funOverflowImages[5].imageurl_l}}" alt="loading...">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv5">
                                     <i class="icon-plus"></i>
                                 </a>
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <p ng-bind="funOverflowImages[5].title"></p>
                                 <div class="mask"></div>
                             </div>
                         </li>
                         <li class="span4 mix web">
                             <div class="thumbnail">
-                                <img src="resources/images/Portfolio07.png" alt="project 7" />
+                                <img src="{{githubImageUrl}}/{{funOverflowImages[6].imageurl_l}}" alt="loading..." />
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv6">
                                     <i class="icon-plus"></i>
                                 </a>
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <p ng-bind="funOverflowImages[6].title"></p>
                                 <div class="mask"></div>
                             </div>
                         </li>
                         <li class="span4 mix photo">
                             <div class="thumbnail">
-                                <img src="resources/images/Portfolio08.png" alt="project 8">
+                                <img src="{{githubImageUrl}}/{{funOverflowImages[7].imageurl_l}}" alt="loading...">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv7">
                                     <i class="icon-plus"></i>
                                 </a>
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <p ng-bind="funOverflowImages[7].title"></p>
+                                
                                 <div class="mask"></div>
                             </div>
                         </li>
                         <li class="span4 mix identity">
                             <div class="thumbnail">
-                                <img src="resources/images/Portfolio09.png" alt="project 9">
+                                <img src="{{githubImageUrl}}/{{funOverflowImages[8].imageurl_l}}" alt="loading...">
                                 <a href="#single-project" class="show_hide more" rel="#slidingDiv8">
                                     <i class="icon-plus"></i>
                                 </a>
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <p ng-bind="funOverflowImages[8].title"></p>
                                 <div class="mask"></div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
+            
+            <ul class="pagination">
+              <li style="display: inline;"><a href="#" ng-click="goPrevPage()">prev</a></li>
+			  <li style="display: inline;"><a href="#" ng-click="goToPage(pageNo)" ng-bind="pageNo"></a></li>
+			  <li style="display: inline;"><a href="#" ng-click="goToPage(pageNo2)" ng-bind="pageNo2"></a></li>
+			  <li style="display: inline;"><a href="#" ng-click="goToPage(pageNo3)" ng-bind="pageNo3"></a></li>
+			  <li style="display: inline;"><a href="#" ng-click="goToPage(pageNo4)" ng-bind="pageNo4"></a></li>
+			  <li style="display: inline;"><a href="#" ng-click="goToPage(pageNo5)" ng-bind="pageNo5"></a></li>
+			  <li style="display: inline;"><a href="#" ng-click="goNextPage()">next</a></li>
+			</ul>
+
         </div>
         <!-- Portfolio section end -->
         
@@ -464,12 +414,116 @@
         <script type="text/javascript" src="resources/js/jquery.cslider.js"></script>
         <script type="text/javascript" src="resources/js/jquery.placeholder.js"></script>
         <script type="text/javascript" src="resources/js/jquery.inview.js"></script>
-        <!-- Load google maps api and call initializeMap function defined in app.js -->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;callback=initializeMap"></script>
         <!-- css3-mediaqueries.js for IE8 or older -->
         <!--[if lt IE 9]>
             <script src="resources/js/respond.min.js"></script>
         <![endif]-->
         <script type="text/javascript" src="resources/js/app.js"></script>
+        <script>
+        
+        angular.module("myapp", [])
+        .controller("HelloController", function($scope) {
+           
+            $scope.githubImageUrl = "https://raw.githubusercontent.com/sumitc91/xyzfun/develop/funoverflow/funoverflow-services/src/main/webapp/resources/images";
+            $scope.funOverflowImages=[];
+            $scope.pageNo=1;
+            $scope.pageNo2=2;
+            $scope.pageNo3=3;
+            $scope.pageNo4=4;
+            $scope.pageNo5=5;
+            $scope.fetchFrom=(($scope.pageNo-1)*10);
+            $scope.fetchUpto=$scope.fetchFrom+9;
+            
+            $scope.goPrevPage = function () {
+                //alert("prev page");
+                if($scope.pageNo==1)
+                	{
+                		alert("you are already at first page.")
+                	}
+                else
+                	{
+                		$scope.pageNo=$scope.pageNo-1;
+                		$scope.pageNo2=$scope.pageNo+1;
+                        $scope.pageNo3=$scope.pageNo2+1;
+                        $scope.pageNo4=$scope.pageNo3+1;
+                        $scope.pageNo5=$scope.pageNo4+1;
+                        
+                		$scope.fetchFrom=(($scope.pageNo-1)*10);
+                        $scope.fetchUpto=$scope.fetchFrom+9;
+                        
+                	}
+                $scope.$apply();
+                refreshPage();
+            };
+            
+            $scope.goNextPage = function () {
+                //alert("next page");
+                $scope.pageNo=$scope.pageNo+1;
+                $scope.pageNo2=$scope.pageNo+1;
+                $scope.pageNo3=$scope.pageNo2+1;
+                $scope.pageNo4=$scope.pageNo3+1;
+                $scope.pageNo5=$scope.pageNo4+1;
+                console.log("$scope.pageNo : "+$scope.pageNo);
+                $scope.fetchFrom=(($scope.pageNo-1)*10);
+                console.log("$scope.fetchFrom : "+$scope.fetchFrom);
+                $scope.fetchUpto=$scope.fetchFrom+9;
+                console.log("$scope.fetchUpto : "+$scope.fetchUpto);
+                $scope.$apply();
+                refreshPage();
+            };
+            
+            $scope.goToPage = function (id) {
+                //alert(id);  
+                $scope.pageNo=id-1;
+             
+                $scope.pageNo2=$scope.pageNo+1;
+                $scope.pageNo3=$scope.pageNo2+1;
+                $scope.pageNo4=$scope.pageNo3+1;
+                $scope.pageNo5=$scope.pageNo4+1;
+                $scope.fetchFrom=(($scope.pageNo-1)*10);
+                $scope.fetchUpto=$scope.fetchFrom+9;
+                $scope.$apply();
+                refreshPage();
+            };
+            
+            
+            refreshPage();
+            
+            function refreshPage() {
+            	var url = '/funoverflow-services/getFunOverflowImages?fetchFrom='+$scope.fetchFrom+'&fetchUpto='+$scope.fetchUpto;
+                var headers = {
+                   'Content-Type': 'application/json'						                      
+               }; 
+            	$.ajax({
+    				url: url,
+    				method: "GET",
+                   headers: headers
+    				}).done(function(data,status) {
+    					console.log(data);
+    					
+    					if(data.Response.responseCode == "200")
+    					{
+    						$scope.funOverflowImages=data.Response.responseDetails.data;
+    						$scope.helloTo = "updated angular js";
+    						
+    						$scope.$apply();
+    						console.log($scope.funOverflowImages);
+    						//alert("success")
+    					}
+    					else 
+    					{
+    						alert("server error occured!");
+    					}
+    				});
+            }
+			
+			
+        } );
+        
+	
+		
+                    
+				
+</script>
     </body>
 </html>
