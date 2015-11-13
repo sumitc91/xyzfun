@@ -1,0 +1,252 @@
+{
+  "apiVersion": "1.0.0",
+  "swaggerVersion": "1.2",
+  "basePath": "http://52.91.67.133:8080/funoverflow-services",
+  "resourcePath": "/Auth",
+  "produces": [
+    "application/json",
+    "application/xml"
+  ],
+  "apis": [
+    {
+      "path": "/insertImageToSql",
+      "operations": [
+        {
+          "method": "POST",
+          "summary": "insertImageToSql",
+          "notes": "insertImageToSql",
+          "items": {
+            
+          },
+          "nickname": "authentication",
+          "authorizations": {
+            
+          },
+          "parameters": [
+            {
+              "id": "body",
+              "description": "Cautom Auth API",
+              "required": true,
+              "type": "authModel",
+              "paramType": "body",
+              "allowMultiple": false,
+              "defaultValue": ""
+            }
+          ],          
+          "deprecated": "false"
+        }
+      ]
+    },
+    {
+      "path": "/moveSqlImagesToSolr",
+      "operations": [
+        {
+          "method": "GET",
+          "summary": "moveSqlImagesToSolr",
+          "notes": "moveSqlImagesToSolr",
+          "items": {
+            
+          },
+          "nickname": "moveSqlImagesToSolr",
+          "authorizations": {
+            
+          },          
+          "deprecated": "false"
+        }
+      ]
+    },
+    {
+      "path": "/getFunOverflowImages?fetchFrom={fetchFrom}&fetchUpto={fetchUpto}",
+      "operations": [
+        {
+          "method": "GET",
+          "summary": "getFunOverflowImages",
+          "notes": "getFunOverflowImages",
+          "items": {
+            
+          },
+          "nickname": "getFunOverflowImages",
+          "authorizations": {
+            
+          },
+          "parameters": [
+            {
+              "name": "fetchFrom",
+              "description": "fetchFrom",
+              "required": true,
+              "type": "forgetPassword",
+              "paramType": "path",
+              "allowMultiple": false,
+              "defaultValue": ""
+            },
+            {
+              "name": "fetchUpto",
+              "description": "fetchUpto",
+              "required": true,
+              "type": "forgetPassword",
+              "paramType": "path",
+              "allowMultiple": false,
+              "defaultValue": ""
+            }
+          ],          
+          "deprecated": "false"
+        }
+      ]
+    }
+  ],
+  "models": {
+    "authModel": {
+      "id": "authModel",
+      "required": [
+        "id",
+        "title",
+        "description",
+        "author",
+        "tags"
+      ],
+      "properties": {
+        "id": {
+          "type": "1000"
+        },
+        "title": {
+          "type": "thisIsTitle"
+        },
+        "description": {
+          "type": "thisIsDescription"
+        },
+        "author": {
+          "type": "1"
+        },
+        "tags": {
+          "type": "string"
+        }
+      }
+    },
+    "createAccountModel": {
+      "id": "createAccountModel",
+      "required": [
+        "FirstName",
+        "LastName",
+        "Username",
+        "Password",
+        "CompanyName",
+        "Type",
+        "Source",
+        "Referral"
+      ],
+      "properties": {
+        "FirstName": {
+          "type": "Sumit"
+        },
+        "LastName": {
+          "type": "Chourasia"
+        },
+        "Username": {
+          "type": "useyouruniqueid@domain.com"
+        },
+        "Password": {
+          "type": "password"
+        },
+        "CompanyName": {
+          "type": "myCompanyName"
+        },
+        "Type": {
+          "type": "client"
+        },
+        "Source": {
+          "type": "web"
+        },
+        "Referral": {
+          "type": "NA"
+        }
+      }
+    },
+    "validateAccountModel": {
+      "id": "validateAccountModel",
+      "required": [
+        "userName",
+        "guid"
+      ],
+      "properties": {
+        "userName": {
+          "type": "sum_kumar12@yahoo.co.in"
+        },
+        "guid": {
+          "type": "7e1befc7-8185-4f84-bbab-aa754c615eac"
+        }
+      }
+    },
+    "resendValidationCode": {
+      "id": "resendValidationCode",
+      "required": [
+        "userName",
+        "guid"
+      ],
+      "properties": {
+        "userName": {
+          "type": "sum_kumar12@yahoo.co.in"
+        },
+        "guid": {
+          "type": "7e1befc7-8185-4f84-bbab-aa754c615eac"
+        }
+      }
+    },
+    "resetPassword": {
+      "id": "resetPassword",
+      "required": [
+        "Username",
+        "Guid",
+        "Password",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "properties": {
+        "Username": {
+          "type": "635588348252269728"
+        },
+        "Guid": {
+          "type": "1f267a9f-863f-488c-8bd1-6fcd65b99c09"
+        },
+        "Password": {
+          "type": "NewPassword"
+        }
+      }
+    },
+    "contactUs": {
+      "id": "contactUs",
+      "required": [
+        "Type",
+        "Message",
+        "SendMeACopy",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "properties": {
+        "Name": {
+          "type": "YourName"
+        },
+        "Email": {
+          "type": "youremail@domain.com"
+        },
+        "Phone": {
+          "type": "9538700019"
+        },
+        "Type": {
+          "type": "Support related"
+        },
+        "Message": {
+          "type": "A testing contact us message"
+        },
+        "SendMeACopy": {
+          "type": "true"
+        }
+      }
+    }
+  }
+}
