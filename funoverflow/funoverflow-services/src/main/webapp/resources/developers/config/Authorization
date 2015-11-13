@@ -118,7 +118,7 @@
           "type": "1"
         },
         "tags": {
-          "type": "string"
+          "type": "tag1;tag2"
         }
       }
     },
