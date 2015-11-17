@@ -426,7 +426,7 @@
            
             $scope.githubImageUrl = "https://raw.githubusercontent.com/sumitc91/xyzfun/develop/funoverflow/funoverflow-services/src/main/webapp/resources/images";
             $scope.funOverflowImages=[];
-            var queryStringPageNo = getParameterByName('pageNo');
+            var queryStringPageNo = parseInt(getParameterByName('pageNo'));
             console.log("queryStringPageNo : "+queryStringPageNo);
             $scope.pageNo=1;
             if(queryStringPageNo==null || queryStringPageNo ==''){
