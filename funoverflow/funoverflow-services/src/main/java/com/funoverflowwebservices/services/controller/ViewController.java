@@ -1,6 +1,9 @@
 package com.funoverflowwebservices.services.controller;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -10,6 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import org.apache.commons.lang.ArrayUtils;
+import org.apache.log4j.Logger;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -36,6 +41,7 @@ public class ViewController extends AbstractController{
 	
 	/*@Autowired
 	CassandraOperations cassandraTemplate;*/
+	private Logger logger = Logger.getLogger(this.getClass());
 	
 	@Resource(name = "ImageInsertServiceImpl")
 	protected ImageInsertService imageInsertService;
@@ -86,6 +92,59 @@ public class ViewController extends AbstractController{
 		
 	}
 	
+	@RequestMapping(value = "/readFromFileAndMoveToSql", method = RequestMethod.GET, headers = "Accept=*/*")
+	public void readFromFileAndMoveToSql(HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse) throws FunOverflowBaseException, SolrServerException, IOException{
+		
+		Response response = new Response();
+		
+		BufferedReader br = null;
+
+		try {
+
+			String sCurrentLine;
+
+			br = new BufferedReader(new FileReader("C:\\code\\svn\\xyzfun\\funoverflow\\funoverflow-developers\\funoverflow_titles.txt"));
+
+			while ((sCurrentLine = br.readLine()) != null) {
+				
+				List<NewImageInsertRequestObject> newImageListInsertRequestObject = new ArrayList<NewImageInsertRequestObject>();
+				NewImageInsertRequestObject newImageInsertRequestObject = new NewImageInsertRequestObject();
+				
+				logger.debug(sCurrentLine);
+				if(sCurrentLine.contains("#8217;"))
+					sCurrentLine = sCurrentLine.replace("#8217;", "\'");
+				
+				String title = sCurrentLine.replace(sCurrentLine.split(" ")[0]+" ", "") ;
+				newImageInsertRequestObject.setAuthor("1");
+				newImageInsertRequestObject.setDescription(title);
+				newImageInsertRequestObject.setId(sCurrentLine.split(" ")[0]);
+				newImageInsertRequestObject.setTitle(title);
+				logger.debug(sCurrentLine);
+				newImageListInsertRequestObject.add(newImageInsertRequestObject);
+				try {
+					response=imageInsertService.insertNewImageIntoSql(newImageListInsertRequestObject);	
+					logger.debug(response);
+				} catch (Exception e) {
+					// TODO: handle exception
+					logger.error("exception occured for line : "+sCurrentLine + " ------> "+e);
+				}
+				
+				//System.out.println(sCurrentLine);
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (br != null)br.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+		
+		renderView(httpServletRequest, httpServletResponse, response);
+	}
+	
 	@RequestMapping(value = "/moveSqlImagesToSolr", method = RequestMethod.GET, headers = "Accept=*/*")
 	public void moveSqlImagesToSolr(HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse) throws FunOverflowBaseException, SolrServerException, IOException{
 		
@@ -94,6 +153,28 @@ public class ViewController extends AbstractController{
 		try 
 		{
 			response = imageInsertService.fetchAndInsertNewImageFromMySqlToSolr();
+		}
+		catch (FunOverflowBaseException funOverflowBaseException) 
+		{
+			log.error("insertNewImageIntoSql Exception", funOverflowBaseException);
+			/*response.setResponseCode(funOverflowBaseException.getErrorCode());
+			response.setResponseMessage("insertNewImageIntoSql Exception");
+			response.setResponseDetails("ERROR", funOverflowBaseException.getMessage());
+			renderView(httpServletRequest, httpServletResponse, response);*/
+		}
+		
+		
+		renderView(httpServletRequest, httpServletResponse, response);
+	}
+	
+	@RequestMapping(value = "/moveSqlImagesToSolrWithoutTags", method = RequestMethod.GET, headers = "Accept=*/*")
+	public void moveSqlImagesToSolrWithoutTags(HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse) throws FunOverflowBaseException, SolrServerException, IOException{
+		
+		Response response = new Response();
+		
+		try 
+		{
+			response = imageInsertService.fetchAndInsertNewImageFromMySqlToSolrWithoutTags();
 		}
 		catch (FunOverflowBaseException funOverflowBaseException) 
 		{

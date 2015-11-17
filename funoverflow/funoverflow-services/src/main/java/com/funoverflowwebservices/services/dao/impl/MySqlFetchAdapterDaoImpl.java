@@ -78,14 +78,17 @@ public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchA
 						DateTimeUtil.getCurrentDateTimeGMT(),
 						DateTimeUtil.getCurrentDateTimeGMT()};
 				
-				for (String tag : newImageInsertRequestObject.getTags().split(";")) {
-					Object[] inputArrayTags = {
-							newImageInsertRequestObject.getId(),
-							tag,
-							null,
-							DateTimeUtil.getCurrentDateTimeGMT()};
-					inputListTags.add(inputArrayTags);
-				}
+				if(newImageInsertRequestObject.getTags() != null)
+				{
+					for (String tag : newImageInsertRequestObject.getTags().split(";")) {
+						Object[] inputArrayTags = {
+								newImageInsertRequestObject.getId(),
+								tag,
+								null,
+								DateTimeUtil.getCurrentDateTimeGMT()};
+						inputListTags.add(inputArrayTags);
+					}
+				}				
 
 				inputList.add(inputArray);
 			}
@@ -239,5 +242,34 @@ public class MySqlFetchAdapterDaoImpl extends AbstractDAO implements MySqlFetchA
 	            throw new FunOverflowBaseException("getImageDetailsFromMySqlDB exception", "90", e, false);
 	        }
 			return listSolrInsertImageEntity;
+	}
+	public List<SolrInsertImageEntity> getImageDetailsFromMySqlDBWithoutTags(
+			int fromId, int toId) throws FunOverflowBaseException {
+		String Query = "SELECT image.id id,image.imagename imagename,image.title title,image.description description,image.addedby addedby,image.updateddate updateddate FROM funoverflow.image image where image.id>="+fromId+" and image.id<="+toId+" ;";
+
+        logger.info(Query);
+        List<SolrInsertImageEntity> listSolrInsertImageEntity = new ArrayList<SolrInsertImageEntity>();
+        try {
+        	listSolrInsertImageEntity = getJdbcTemplate().query(Query,
+                new RowMapper<SolrInsertImageEntity>() {
+
+                    public SolrInsertImageEntity mapRow(ResultSet rs, int arg1) throws SQLException {
+                    	SolrInsertImageEntity solrInsertImageEntity = new SolrInsertImageEntity();
+
+                    	solrInsertImageEntity.setAuthor(rs.getString("addedby"));
+                    	solrInsertImageEntity.setDescription(rs.getString("description"));
+                    	solrInsertImageEntity.setId(rs.getString("id"));
+                    	solrInsertImageEntity.setImageurl_l(rs.getString("imagename"));
+                    	solrInsertImageEntity.setLast_modified(rs.getString("updateddate"));
+                    	//solrInsertImageEntity.setTagsString(rs.getString("tags"));
+                    	solrInsertImageEntity.setTitle(rs.getString("title"));
+                        
+                        return solrInsertImageEntity;
+                    }
+                });
+        } catch (DataAccessException e) {
+            throw new FunOverflowBaseException("getImageDetailsFromMySqlDB exception", "90", e, false);
+        }
+		return listSolrInsertImageEntity;
 	}
 }

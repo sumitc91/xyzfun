@@ -74,6 +74,7 @@ public class SolrSaveAdapter {
                 doc.addField("imageurl_l",solrInsertImageEntity.getImageurl_l());
                 doc.addField("last_modified", solrInsertImageEntity.getLast_modified());
                 add = solrServer.add(doc);
+                log.debug("id : "+solrInsertImageEntity.getId());
 			}
             
         }
@@ -87,6 +88,7 @@ public class SolrSaveAdapter {
             status.put("SolrAddStatus",  add.getStatus());
             status.put("SolrCommitStatus",   commit.getStatus());
             status.put("SolrOptimizeStatus",   optimize.getStatus());
+            
             log.debug("Insert Status: "+ status);
             return status;
         } catch (Exception e) {

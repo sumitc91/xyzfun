@@ -1,17 +1,27 @@
 package com.funoverflowwebservices.services.controller;
 
 import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.imageio.ImageIO;
 
 import org.apache.commons.codec.binary.Base64;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import sun.util.logging.resources.logging;
+
+import com.funoverflowwebservices.common.request.vo.NewImageInsertRequestObject;
 
 
 
@@ -19,16 +29,52 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/ImgurImage")
 public class ImgurImageController extends AbstractController {
 
+	private static Logger logger = Logger.getLogger(ImgurImageController.class);
+	
 	public static void main(String args[])
 	{
 		System.out.println("test");
-		BufferedImage image = new BufferedImage(200, 200, 1);
+		/*BufferedImage image = new BufferedImage(200, 200, 1);
 		ImgurImageController imgurImageController = new ImgurImageController();
 		try {
 			imgurImageController.upload(image);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}*/
+				
+		BufferedReader br = null;
+
+		try {
+
+			String sCurrentLine;
+
+			br = new BufferedReader(new FileReader("C:\\code\\svn\\xyzfun\\funoverflow\\funoverflow-developers\\funoverflow_titles.txt"));
+
+			while ((sCurrentLine = br.readLine()) != null) {
+				
+				List<NewImageInsertRequestObject> newImageListInsertRequestObject = new ArrayList<NewImageInsertRequestObject>();
+				NewImageInsertRequestObject newImageInsertRequestObject = new NewImageInsertRequestObject();
+				logger.debug(sCurrentLine);
+				if(sCurrentLine.contains("#8217;"))
+					sCurrentLine = sCurrentLine.replace("#8217;", "\'");
+				
+				newImageInsertRequestObject.setAuthor("1");
+				newImageInsertRequestObject.setDescription(sCurrentLine);
+				newImageInsertRequestObject.setId(sCurrentLine.split(" ")[0]);
+				newImageInsertRequestObject.setTitle(sCurrentLine);
+				
+				//System.out.println(sCurrentLine);
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (br != null)br.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
 		}
 	}
 	

@@ -11,4 +11,6 @@ import com.funoverflowwebservices.common.request.vo.NewImageInsertRequestObject;
 public interface MySqlFetchAdapterDao {
 	public Map<String,String> insertImageInMySqlDB(List<NewImageInsertRequestObject> newImageList) throws FunOverflowBaseException;
 	public List<SolrInsertImageEntity> getImageDetailsFromMySqlDB(int fromId,int toId) throws FunOverflowBaseException;
+	public List<SolrInsertImageEntity> getImageDetailsFromMySqlDBWithoutTags(
+			int i, int j) throws FunOverflowBaseException;
 }

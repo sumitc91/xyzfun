@@ -18,6 +18,9 @@ public interface ImageInsertService {
 	public Response fetchAndInsertNewImageFromMySqlToSolr(
 			)
 			throws FunOverflowBaseException, SolrServerException, IOException ;
+	public Response fetchAndInsertNewImageFromMySqlToSolrWithoutTags(
+			)
+			throws FunOverflowBaseException, SolrServerException, IOException ;
 	public List<SolrInsertImageEntity> getFunOverflowImagesFromSolr(Map<String,String> searchCriteria)
             throws FunOverflowBaseException;
 }

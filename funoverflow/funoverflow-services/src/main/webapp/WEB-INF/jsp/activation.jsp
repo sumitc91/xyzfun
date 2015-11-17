@@ -426,11 +426,20 @@
            
             $scope.githubImageUrl = "https://raw.githubusercontent.com/sumitc91/xyzfun/develop/funoverflow/funoverflow-services/src/main/webapp/resources/images";
             $scope.funOverflowImages=[];
+            var queryStringPageNo = getParameterByName('pageNo');
+            console.log("queryStringPageNo : "+queryStringPageNo);
             $scope.pageNo=1;
-            $scope.pageNo2=2;
-            $scope.pageNo3=3;
-            $scope.pageNo4=4;
-            $scope.pageNo5=5;
+            if(queryStringPageNo==null || queryStringPageNo ==''){
+            	$scope.pageNo=1;
+            }
+            else
+            {
+            	$scope.pageNo=queryStringPageNo;	
+            }
+            $scope.pageNo2=$scope.pageNo+1;
+            $scope.pageNo3=$scope.pageNo+2;
+            $scope.pageNo4=$scope.pageNo+3;
+            $scope.pageNo5=$scope.pageNo+4;
             $scope.fetchFrom=(($scope.pageNo-1)*10);
             $scope.fetchUpto=$scope.fetchFrom+9;
             
@@ -444,9 +453,9 @@
                 	{
                 		$scope.pageNo=$scope.pageNo-1;
                 		$scope.pageNo2=$scope.pageNo+1;
-                        $scope.pageNo3=$scope.pageNo2+1;
-                        $scope.pageNo4=$scope.pageNo3+1;
-                        $scope.pageNo5=$scope.pageNo4+1;
+                        $scope.pageNo3=$scope.pageNo+2;
+                        $scope.pageNo4=$scope.pageNo+3;
+                        $scope.pageNo5=$scope.pageNo+4;
                         
                 		$scope.fetchFrom=(($scope.pageNo-1)*10);
                         $scope.fetchUpto=$scope.fetchFrom+9;
@@ -458,18 +467,19 @@
             
             $scope.goNextPage = function () {
                 //alert("next page");
-                $scope.pageNo=$scope.pageNo+1;
+                location.href = "?pageNo="+$scope.pageNo+1;
+                /* $scope.pageNo=$scope.pageNo+1;
                 $scope.pageNo2=$scope.pageNo+1;
-                $scope.pageNo3=$scope.pageNo2+1;
-                $scope.pageNo4=$scope.pageNo3+1;
-                $scope.pageNo5=$scope.pageNo4+1;
+                $scope.pageNo3=$scope.pageNo+2;
+                $scope.pageNo4=$scope.pageNo+3;
+                $scope.pageNo5=$scope.pageNo+4;
                 console.log("$scope.pageNo : "+$scope.pageNo);
                 $scope.fetchFrom=(($scope.pageNo-1)*10);
                 console.log("$scope.fetchFrom : "+$scope.fetchFrom);
                 $scope.fetchUpto=$scope.fetchFrom+9;
                 console.log("$scope.fetchUpto : "+$scope.fetchUpto);
                 $scope.$apply();
-                refreshPage();
+                refreshPage(); */
             };
             
             $scope.goToPage = function (id) {
@@ -520,7 +530,12 @@
 			
         } );
         
-	
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
 		
                     
 				

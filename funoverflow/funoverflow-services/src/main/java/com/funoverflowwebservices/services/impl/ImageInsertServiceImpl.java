@@ -113,4 +113,28 @@ public class ImageInsertServiceImpl implements ImageInsertService {
 		return solrSaveAdapter.getFunOverflowImagesFromSolr(searchCriteria);
 	}
 
+	public Response fetchAndInsertNewImageFromMySqlToSolrWithoutTags()
+			throws FunOverflowBaseException, SolrServerException, IOException {
+		Response response = new Response();
+		Map<String,String> responseMap = new HashMap<String,String>();
+		int numberOfImagesToBeProcessedAtOnce=100;
+		for(int i=0;i<2100;i+=numberOfImagesToBeProcessedAtOnce)
+		{
+			List<SolrInsertImageEntity> solrInsertImageEntitiesList = mySqlFetchAdapterDao.getImageDetailsFromMySqlDBWithoutTags(i, ((i+numberOfImagesToBeProcessedAtOnce)-1));
+			if(solrInsertImageEntitiesList==null || solrInsertImageEntitiesList.size()<1)
+				continue;
+			solrSaveAdapter.insertNewImage(solrInsertImageEntitiesList, false);
+		}
+		
+		
+		/*List<SolrInsertImageEntity> solrInsertImageEntityList = createDummySolrInsertData();
+		solrSaveAdapter.insertNewImage(solrInsertImageEntityList,false);*/
+		
+		response.setResponseCode("200");
+		response.setResponseMessage("success");
+		response.setResponseDetails("result", responseMap);
+		
+		return response;
+	}
+
 }
