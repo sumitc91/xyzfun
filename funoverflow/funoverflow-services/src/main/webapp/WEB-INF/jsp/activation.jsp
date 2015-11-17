@@ -451,14 +451,15 @@
                 	}
                 else
                 	{
-                		$scope.pageNo=$scope.pageNo-1;
+                		location.href = "?pageNo="+$scope.pageNo-1;
+                		/* $scope.pageNo=$scope.pageNo-1;
                 		$scope.pageNo2=$scope.pageNo+1;
                         $scope.pageNo3=$scope.pageNo+2;
                         $scope.pageNo4=$scope.pageNo+3;
                         $scope.pageNo5=$scope.pageNo+4;
                         
                 		$scope.fetchFrom=(($scope.pageNo-1)*10);
-                        $scope.fetchUpto=$scope.fetchFrom+9;
+                        $scope.fetchUpto=$scope.fetchFrom+9; */
                         
                 	}
                 $scope.$apply();
